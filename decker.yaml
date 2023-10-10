@@ -1,0 +1,9 @@
+meta-data:
+  - metadata/defaults.yaml
+static-resource-dirs:
+  - assets/
+template:
+  css: css/template.css
+  title-page:
+    affiliation-logo: "assets/logos/footer4.png"    
+    # teaser-img: "assets/img/mardata_header_ocean_01_1250x700_higher_gamma.jpg"
