@@ -66,7 +66,7 @@ In contrast to e.g. automated data analytics by machine learning or other comput
 
 
 <!-- # ARENA2 Visualization Lab {.columns .fragments style="text-align:center"} -->
-# ARENA2 Visualization Lab ![](assets/img/2019-10-16_Arena-0191-nikolas-linke_credit.jpg) {style="color:white"}
+# ARENA2 ![](assets/img/2019-10-16_Arena-0191-nikolas-linke_credit.jpg) {style="color:white"}
 
 
 # Immersive and Collaborative Visual Analytics
@@ -93,7 +93,14 @@ Can be co-located or not, synchronous or asynchronous
 
 
 
-# DEVELOPMENT FOR IMMERSIVE ANALYTICS {style="text-align:center"}
+# DEVELOPMENT FOR IMMERSIVE ANALYTICS$^*$ {style="text-align:center"}
+
+
+<span style="position: absolute;  bottom: 10%;  left: 6%;  font-size: small;">
+$^*$at ARENA2
+</span>
+
+
 
 # Unreal Engine {.columns}
 
@@ -108,6 +115,7 @@ Can be co-located or not, synchronous or asynchronous
 - Today branded as *"powerful real-time 3D creation tool"*
 - Free to use, source-available software
 - Huge ecosystem
+- Used in game development, architecture, simulation, research, film making ...
 
 # Virtual Production
 
@@ -137,21 +145,24 @@ Can be co-located or not, synchronous or asynchronous
 
 # ![](../assets/img/scientific_workflow.jpg)
 
-# Field Work in Geology {.columns}
+# Fieldwork in Geology
 
-## Geological compass {.left}
+## {style="display:flex; justify-content:space-between"}
+![D. Garbe-Schönberg](assets/img/fieldwork.jpg){width=33%}
+![Wikimedia: Setup of a modern geological compass after Prof. Clar (Freiberger) ([https://en.wikipedia.org/wiki/Geological_compass](https://en.wikipedia.org/wiki/Geological_compass))](../assets/img/geocompass.jpg){width=33%}
+![UCL Earth Sciences: "An Idiot's Guide to Fieldwork and Notebooks" by David Dobson ([https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching.html](https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching))](../assets/img/fieldnotebook.jpg){width=33%}
 
-![Wikimedia: Setup of a modern geological compass after Prof. Clar (Freiberger) ([https://en.wikipedia.org/wiki/Geological_compass](https://en.wikipedia.org/wiki/Geological_compass))](../assets/img/geocompass.jpg)
 
-<!-- -------------------------------------------------------------------------------------------------- -->
-
-## Field Notebook {.right}
-
-![UCL Earth Sciences: "An Idiot's Guide to Fieldwork and Notebooks" by David Dobson ([https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching.html](https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching))](../assets/img/fieldnotebook.jpg)
-
-## How to do this under water? {.bottom .fragment}
+## How to do this under water? { .fragment}
 ## Virtual fieldwork in immersive environments {.fragment}
 
+# Georeferencing Data
+
+Geospatial data from the real world needs to be in a **Coordinate Reference System** to express the location and be able to make queries that give realistic results (e.g. real distance between two points in a 3D model)
+
+- Latitude = Elevation in degrees to the Equator
+- Longitude = Azimuth in degrees to the Prime Meridian (Greenwich)
+- Altitude = Height in meters to the reference ellipsoid (i.e. an approximate representation of the Earth). 
 
 # Cesium
 
@@ -163,17 +174,30 @@ Can be co-located or not, synchronous or asynchronous
 
 # Cesium for Unreal
 
-![Cesium for Unreal Pipeline](assets/img/cesium-unreal.png)
+<!-- ## {style="display:ruby; justify-content:space-between"} -->
+
+## {style="text-align:center"}
+
+![](assets/img/cesium-unreal.png){width=70%}
+![Black Smoker Photogrammetry Model in Unreal Engine](assets/img/HighresScreenshot00006.png){width=70%}
 
 # What does this mean?
 
-Create georeferenced virtual and immersive environments which allow to interactively query geospatial data in a way yielding actual scientific insight.
 
-For people playing Buzzword-Bingo right now: Digital Twin
+
+## 🡆 Create georeferenced virtual and immersive environments {.fragment}
+## 🡆 Interactively query geospatial data in a way that yields actual scientific insight/results {.fragment}
+## 🡆 Immersive Analytics {.fragment}
+## 🡆 Digital Twin$^*$ {.fragment}
+
+<span style="position: absolute;  bottom: 10%;  left: 6%;  font-size: small;">
+$^*$for people playing buzzword bingo right now
+</span>
+
 
 # REPRODUCIBILITY AND PROVENANCE
 
-# The visual analytics workflow {.columns}
+# The proposed Immersive Analytics Workflow {.columns}
 
 ##  {.left .fragment}
 
@@ -197,9 +221,44 @@ For people playing Buzzword-Bingo right now: Digital Twin
 ![Publication of insights and visualization](assets/img/Picture3.jpg)
 
 <!-- ## There is always space for more Visualization Provenance in visual analytics workflows! {.fragment .bottom style="font-size:large"} -->
-## If the insights and a static image of the visualization are being published, so should the process! {.fragment .bottom style="font-size:100%"}
+## But: If the insights and a static image of the visualization are being published, so should the process! {.fragment .bottom style="font-size:100%"}
 
-[:include](b_Vis_Prov.md)
 
+# Provenance
+
+
+## {.example .fragment}
+
+"*[...] is information about entities, activities, and people involved in producing a piece of data or thing, which can be used to form **assessments about its quality, reliability or trustworthiness***"
+ 
+\- World Wide Web Consortium [@2013provoverview]
+
+# The Value of Visualization
+
+##
+
+The value is a trade-off between the costs (e.g. the effort to understand a visualization) and the gained knowledge.
+
+
+*"Just claiming that a visualization gives insight is not enough, if we want to offer additional value."* [@vanwijk2005value]
+
+<!-- ## {.example .fragment} -->
+
+## Provenance and reproducibility make it possible to assess and increase the scientific value of a visualization {.fragment}
+
+>- Capture Users reasoning processes by capturing internal (i.e. in-app interaction) and external (e.g. think-aloud, manual notes) information
+- Capture visualization state history including undo-redo and branching actions
+- Organize provenance and make it persistent and publishable in a "Digital Lab Book" [@bernstetter2023practical]
+
+# The Digital Lab Book
+
+![](assets/img/digital-lab-book_notext.png)
+
+
+# 
+
+## {style="text-align:center"}
+
+![This modified illustration was originally created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. [DOI: 10.5281/zenodo.3332807](https://doi.org/10.5281/zenodo.3332807)](assets/img/ModifiedReproducibleJourney.jpg){width=65%}
 
 # References

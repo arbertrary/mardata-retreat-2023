@@ -24,6 +24,10 @@ The value is a trade-off between costs and the gained knowledge.
 - Capture visualization state history including undo-redo and branching actions
 - Organize provenance and make it persistent and publishable in a "Digital Lab Book" [@bernstetter2023practical]
 
+# The Digital Lab Book
+
+![](assets/img/digital-lab-book_notext.png)
+
 
 # 
 
