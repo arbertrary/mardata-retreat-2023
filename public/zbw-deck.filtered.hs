@@ -43,8 +43,8 @@
   [Header 2 ("section-3",["top"],[]) []
   ,BlockQuote
    [BulletList
-    [[Plain [Str "A",Space,Str "feeling",Space,Str "of",Space,Str "being",Space,Strong [Str "immersed"],Space,Str "and",Space,Strong [Str "present"],Space,Str "in",Space,Str "a",Space,Str "virtual",Space,Str "environment",Space,Str "(",Strong [Str "VE"],Str ")"]]
-    ,[Plain [Str "VEs",Space,Str "can",Space,Str "have",Space,Str "varying",Space,Str "degrees",Space,Str "and",Space,Str "aspects",Space,Str "of",Space,Str "immersion",Space,Str "(spatial",Space,Str "immersion,",Space,Str "3D/stereoscopy,",Space,Str "head",Space,Str "tracking,",Space,Str "surround",Space,Str "sound,",Space,Str "\8230)"]]
+    [[Plain [Str "A",Space,Str "feeling",Space,Str "of",Space,Str "being",Space,Strong [Str "immersed"],Space,Str "and",Space,Strong [Str "present"],Space,Str "in",Space,Str "a",Space,Str "virtual",Space,Str "environment"]]
+    ,[Plain [Str "Varying",Space,Str "degrees",Space,Str "and",Space,Str "aspects",Space,Str "of",Space,Str "immersion",Space,Str "(spatial",Space,Str "immersion,",Space,Str "3D/stereoscopy,",Space,Str "head",Space,Str "tracking,",Space,Str "surround",Space,Str "sound,",Space,Str "\8230)"]]
     ,[Plain [Str "Examples:",Space,Emph [Str "CAVE"],Str "s,",Space,Str "Head-Mounted",Space,Str "Displays,",Space,Str "Domes",Space,Str "(e.g.\160",Emph [Str "ARENA2"],Str ")"]]]]]]
 ,Div ("",["multi-column-row","multi-column-row-3"],[])
  []
@@ -117,7 +117,7 @@
 ,Div ("",["box","columns","fragment"],[])
  [Header 2 ("how-to-do-this-under-water",[],[]) [Str "How",Space,Str "to",Space,Str "do",Space,Str "this",Space,Str "under",Space,Str "water?"]]
 ,Div ("",["box","columns","fragment"],[])
- [Header 2 ("virtual-fieldwork-in-immersive-environments",[],[]) [Str "Virtual",Space,Str "fieldwork",Space,Str "in",Space,Str "immersive",Space,Str "environments"]]
+ [Header 2 ("virtual-fieldwork-in-immersive-environments",[],[]) [Str "\129094",Space,Str "Virtual",Space,Str "fieldwork",Space,Str "in",Space,Str "immersive",Space,Str "environments"]]
 ,HorizontalRule
 ,Header 1 ("georeferencing-data",[],[]) [Str "Georeferencing",Space,Str "Data"]
 ,Para [Str "Geospatial",Space,Str "data",Space,Str "from",Space,Str "the",Space,Str "real",Space,Str "world",Space,Str "needs",Space,Str "to",Space,Str "be",Space,Str "in",Space,Str "a",Space,Strong [Str "Coordinate",Space,Str "Reference",Space,Str "System"],Space,Str "to",Space,Str "express",Space,Str "the",Space,Str "location",Space,Str "and",Space,Str "be",Space,Str "able",Space,Str "to",Space,Str "make",Space,Str "queries",Space,Str "that",Space,Str "give",Space,Str "realistic",Space,Str "results",Space,Str "(e.g.\160real",Space,Str "distance",Space,Str "between",Space,Str "two",Space,Str "points",Space,Str "in",Space,Str "a",Space,Str "3D",Space,Str "model)"]

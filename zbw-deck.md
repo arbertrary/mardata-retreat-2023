@@ -8,6 +8,7 @@ title: Reproducible Semi-Immersive Analysis of Georeferenced Datasets
 subtitle: ZBW Kolloquium
 author: Armin Bernstetter
 slideNumber: true
+transition: Fade
 date: 24.10.2023
 ---
 
@@ -55,8 +56,8 @@ In contrast to e.g. automated data analytics by machine learning or other comput
 
 ## {.top}
 
->- A feeling of being **immersed** and **present** in a virtual environment (**VE**)
-- VEs can have varying degrees and aspects of immersion (spatial immersion, 3D/stereoscopy, head tracking, surround sound, ...)
+>- A feeling of being **immersed** and **present** in a virtual environment
+- Varying degrees and aspects of immersion (spatial immersion, 3D/stereoscopy, head tracking, surround sound, ...)
 - Examples: *CAVE*s, Head-Mounted Displays, Domes (e.g. *ARENA2*)
 
 ## {.bottom align=center .fragment style="display: inline-flex;  justify-content: space-evenly;"}
@@ -154,7 +155,7 @@ $^*$at ARENA2
 
 
 ## How to do this under water? { .fragment}
-## Virtual fieldwork in immersive environments {.fragment}
+## 🡆 Virtual fieldwork in immersive environments {.fragment}
 
 # Georeferencing Data
 

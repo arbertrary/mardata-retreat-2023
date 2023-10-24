@@ -80,7 +80,7 @@
   <script>
     /* Store JSON encoded Pandoc meta data in a global variable for easy
     reference from any script. */
-    window.Decker = {meta: {"fragmentInURL":true,"controls":true,"border-decoration-padding":"10px","hideCursorTime":"2000.0","transition":"none","chalkboard":"template-deck.json","hash":true,"history":false,"progress":true,"meta-data":["./metadata/defaults.yaml"],"border-decoration-width":"20px","center":true,"whiteboard-inactive-color":"lightgrey","whiteboard-icon-size":"2vmin","menu":true,"overview":true,"margin":"5.0e-2","spacing-vertical-base":"0.5em","bibliography":"./example.bib","margin-columns":"0em","test123":"test123","help":true,"provisioning":"Copy","hideInactiveCursor":true,"backgroundTransition":"none","date":"24.10.2023","subtitle":"ZBW Kolloquium","csl":"./chicago-author-date.csl","slideNumber":true,"whiteboard-active-color":"rgb(42,157,223)","rsync-destination":{"path":"/some/path","host":"git@gitlab2.informatik.uni-wuerzburg.de"},"zoom":true,"keyboard":true,"touch":true,"author":"Armin Bernstetter","title":"Reproducible Semi-Immersive Analysis of Georeferenced Datasets","template":{"css":"css/template.css","title-page":{"teaser-img":"assets/img/PXL_20230911_144144845.PANO.jpg","affiliation-logo":"assets/logos/footer4.png"}},"dictionary":{"de":{"quiz":{"qmi-drop-hint":"...und hier in die richtige Kategorie einsortieren.","solve-button":"Lösung","reset-button":"Zurücksetzen","input-placeholder":"Eingeben und 'Enter'","qmi-drag-hint":"Objekte per Drag&amp;Drop ziehen...","solution":"Lösung"},"exam":{"points":"Punkte","Medium":"Mittelschwer","solve-button":"Lösen","Easy":"Leicht","reset-button":"Zurücksetzen","Hard":"Schwer","again-button":"Nochmal","placeholder":"Antwort eingeben","solution":"Lösung"}},"en":{"quiz":{"qmi-drop-hint":"...and put them here into the correct category.","reset-button":"Reset","solution-button":"Show Solution","input-placeholder":"Type and press 'Enter'","qmi-drag-hint":"Drag items from here...","solution":"Show Solution"},"exam":{"points":"Points","Medium":"Medium","solve-button":"Solve","Easy":"Easy","reset-button":"Reset","Hard":"Hard","again-button":"Again","placeholder":"Type in answer","solution":"Solution"}}},"align-global":"left","vertical-slides":true,"font-size-base":"28px","fragments":true,"static-resource-dirs":["./assets/"],"whiteboard-background-color":"rgb(250,250,250)","border-decoration-style":"solid"}};
+    window.Decker = {meta: {"fragmentInURL":true,"controls":true,"border-decoration-padding":"10px","hideCursorTime":"2000.0","transition":"Fade","chalkboard":"template-deck.json","hash":true,"history":false,"progress":true,"meta-data":["./metadata/defaults.yaml"],"border-decoration-width":"20px","center":true,"whiteboard-inactive-color":"lightgrey","whiteboard-icon-size":"2vmin","menu":true,"overview":true,"margin":"5.0e-2","spacing-vertical-base":"0.5em","bibliography":"./example.bib","margin-columns":"0em","test123":"test123","help":true,"provisioning":"Copy","hideInactiveCursor":true,"backgroundTransition":"none","date":"24.10.2023","subtitle":"ZBW Kolloquium","csl":"./chicago-author-date.csl","slideNumber":true,"whiteboard-active-color":"rgb(42,157,223)","rsync-destination":{"path":"/some/path","host":"git@gitlab2.informatik.uni-wuerzburg.de"},"zoom":true,"keyboard":true,"touch":true,"author":"Armin Bernstetter","title":"Reproducible Semi-Immersive Analysis of Georeferenced Datasets","template":{"css":"css/template.css","title-page":{"teaser-img":"assets/img/PXL_20230911_144144845.PANO.jpg","affiliation-logo":"assets/logos/footer4.png"}},"dictionary":{"de":{"quiz":{"qmi-drop-hint":"...und hier in die richtige Kategorie einsortieren.","solve-button":"Lösung","reset-button":"Zurücksetzen","input-placeholder":"Eingeben und 'Enter'","qmi-drag-hint":"Objekte per Drag&amp;Drop ziehen...","solution":"Lösung"},"exam":{"points":"Punkte","Medium":"Mittelschwer","solve-button":"Lösen","Easy":"Leicht","reset-button":"Zurücksetzen","Hard":"Schwer","again-button":"Nochmal","placeholder":"Antwort eingeben","solution":"Lösung"}},"en":{"quiz":{"qmi-drop-hint":"...and put them here into the correct category.","reset-button":"Reset","solution-button":"Show Solution","input-placeholder":"Type and press 'Enter'","qmi-drag-hint":"Drag items from here...","solution":"Show Solution"},"exam":{"points":"Points","Medium":"Medium","solve-button":"Solve","Easy":"Easy","reset-button":"Reset","Hard":"Hard","again-button":"Again","placeholder":"Type in answer","solution":"Solution"}}},"align-global":"left","vertical-slides":true,"font-size-base":"28px","fragments":true,"static-resource-dirs":["./assets/"],"whiteboard-background-color":"rgb(250,250,250)","border-decoration-style":"solid"}};
   </script>
 
   <!-- Printing and PDF exports -->
@@ -178,8 +178,8 @@
 <div class="box columns top">
 <h2 class="top" id="section-3"></h2>
 <ul>
-<li class="fragment">A feeling of being <strong>immersed</strong> and <strong>present</strong> in a virtual environment (<strong>VE</strong>)</li>
-<li class="fragment">VEs can have varying degrees and aspects of immersion (spatial immersion, 3D/stereoscopy, head tracking, surround sound, …)</li>
+<li class="fragment">A feeling of being <strong>immersed</strong> and <strong>present</strong> in a virtual environment</li>
+<li class="fragment">Varying degrees and aspects of immersion (spatial immersion, 3D/stereoscopy, head tracking, surround sound, …)</li>
 <li class="fragment">Examples: <em>CAVE</em>s, Head-Mounted Displays, Domes (e.g. <em>ARENA2</em>)</li>
 </ul>
 </div>
@@ -281,7 +281,7 @@ nDisplay Plugin
 <h2 id="how-to-do-this-under-water">How to do this under water?</h2>
 </div>
 <div class="box columns fragment">
-<h2 id="virtual-fieldwork-in-immersive-environments">Virtual fieldwork in immersive environments</h2>
+<h2 id="virtual-fieldwork-in-immersive-environments">🡆 Virtual fieldwork in immersive environments</h2>
 </div>
 </section>
 <section id="georeferencing-data" class="slide level1">
@@ -486,7 +486,7 @@ vanWijk, Jarke J. 2005. <span>“The Value of Visualization.”</span> In <em>IE
           // Time before the cursor is hidden (in ms)
           hideCursorTime: 2000.0,
         // Transition style
-        transition: 'none', // none/fade/slide/convex/concave/zoom
+        transition: 'Fade', // none/fade/slide/convex/concave/zoom
         // Transition style for full page slide backgrounds
         backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
         // Factor of the display size that should remain empty around the content
