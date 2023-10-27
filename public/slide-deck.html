@@ -1,11 +1,26 @@
 <!DOCTYPE html>
+<!-- This is the pandoc 2.7.3 template for reveal.js output modified for decker. -->
 <html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Armin Bernstetter">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Reproducible Semi-Immersive Analysis of Georeferenced Datasets</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="support/vendor/reveal/css/reset.css">
+  <link rel="stylesheet" href="support/vendor/reveal/css/reveal.css">
+  <link rel="stylesheet" href="support/plugins/whiteboard/whiteboard.css">
+  <link rel="stylesheet" href="support/plugins/menu/menu.css">
+  <style>
+        /* This is the global style block for decker's layout css variables (aka css custom properties) 
+        for all kinds of parameterization. Variables are set via an according YAML variable 
+        which defaults from the default.yaml. 
+        Can't be sourced out to external css file since variable substitution is performed
+        by pandoc which does not process the css */
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="generator" content="pandoc">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">         <meta name="author" content="Armin Bernstetter">           <title>Reproducible Semi-Immersive Analysis of Georeferenced Datasets</title>
-        <style type="text/css">
         :root {
                 /* This is the global variable for the default alignment. Defaults to left.    */
                 /* Can be overriden in local YAML and for whole slides or individual elements  */
@@ -50,104 +65,62 @@
                 --whiteboard-inactive-color: lightgrey;
                 --whiteboard-background-color: rgb(250,250,250);      
         } 
-        </style>
-                
-    <link rel="stylesheet" href="support/css/handout.css">
-    
+  </style>
+   
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="support/plugins/explain/explain.css">
+  <link rel="stylesheet" href="support/vendor/videojs/video-js.min.css">
+      <link rel="stylesheet" href="support/css/decker.css">
+        <link rel="stylesheet" href="css/template.css"/>
+  <script>
+    /* Store JSON encoded Pandoc meta data in a global variable for easy
+    reference from any script. */
+    window.Decker = {meta: {"fragmentInURL":true,"controls":true,"border-decoration-padding":"10px","hideCursorTime":"2000.0","transition":"Fade","chalkboard":"template-deck.json","hash":true,"history":false,"progress":true,"meta-data":["./metadata/defaults.yaml"],"border-decoration-width":"20px","center":true,"whiteboard-inactive-color":"lightgrey","whiteboard-icon-size":"2vmin","menu":true,"overview":true,"margin":"5.0e-2","spacing-vertical-base":"0.5em","bibliography":"./example.bib","margin-columns":"0em","test123":"test123","help":true,"provisioning":"Copy","hideInactiveCursor":true,"backgroundTransition":"none","date":"06.11.2023","subtitle":"MarDATA Retreat 2023","csl":"./chicago-author-date.csl","slideNumber":true,"whiteboard-active-color":"rgb(42,157,223)","rsync-destination":{"path":"/some/path","host":"git@gitlab2.informatik.uni-wuerzburg.de"},"zoom":true,"keyboard":true,"touch":true,"author":"Armin Bernstetter","title":"Reproducible Semi-Immersive Analysis of Georeferenced Datasets","template":{"css":"css/template.css","title-page":{"teaser-img":"assets/img/PXL_20230911_144144845.PANO.jpg","affiliation-logo":"assets/logos/footer4.png"}},"dictionary":{"de":{"quiz":{"qmi-drop-hint":"...und hier in die richtige Kategorie einsortieren.","solve-button":"Lösung","reset-button":"Zurücksetzen","input-placeholder":"Eingeben und 'Enter'","qmi-drag-hint":"Objekte per Drag&amp;Drop ziehen...","solution":"Lösung"},"exam":{"points":"Punkte","Medium":"Mittelschwer","solve-button":"Lösen","Easy":"Leicht","reset-button":"Zurücksetzen","Hard":"Schwer","again-button":"Nochmal","placeholder":"Antwort eingeben","solution":"Lösung"}},"en":{"quiz":{"qmi-drop-hint":"...and put them here into the correct category.","reset-button":"Reset","solution-button":"Show Solution","input-placeholder":"Type and press 'Enter'","qmi-drag-hint":"Drag items from here...","solution":"Show Solution"},"exam":{"points":"Points","Medium":"Medium","solve-button":"Solve","Easy":"Easy","reset-button":"Reset","Hard":"Hard","again-button":"Again","placeholder":"Type in answer","solution":"Solution"}}},"align-global":"left","vertical-slides":true,"font-size-base":"28px","fragments":true,"static-resource-dirs":["./assets/"],"whiteboard-background-color":"rgb(250,250,250)","border-decoration-style":"solid"}};
+  </script>
 
-    <link rel="stylesheet" href="support/examiner/examiner.css">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? String.raw`support/vendor/reveal/css/print/pdf.css` : String.raw`support/vendor/reveal/css/print/paper.css`;
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="https://unpkg.com/reveal.js@^4//lib/js/html5shiv.js"></script>
+  <![endif]-->
+
+</head>
+<body data-deckid="">
+  <div class="reveal">
+    <div class="slides">
+
+    <!-- standard settings -->
+               <section id="title-slide" class="title-page">
+              <div class="valign-block">
+            <div class="valigned">
+                <div class="title"> Reproducible Semi-Immersive Analysis of Georeferenced Datasets</div>
+                                   <div class="subtitle"> MarDATA Retreat 2023 </div>
+                                                   <div class="teaser-img">
+                      <img src=assets/img/PXL_20230911_144144845.PANO.jpg>
+                   </div>
+                                                   <div class="date"> 06.11.2023 </div>
+                                                   <div class="author"> Armin Bernstetter </div>
+                                                   <div class="affiliation-logo">
+                      <img src=assets/logos/footer4.png>
+                   </div>
+                                 
+            </div>
+        </div>
+         </section>      
+   
 
 
-    <!-- MathJax config -->
-    <script>
-        window.MathJax = {
-            loader: {
-                load: ['[tex]/ams']
-            },
-            svg: {
-                minScale: .5,                  // smallest scaling factor to use
-                matchFontHeight: false,        // true to match ex-height of surrounding font
-                mtextInheritFont: false,       // true to make mtext elements use surrounding font
-                merrorInheritFont: true,       // true to make merror text use surrounding font
-                mathmlSpacing: false,          // true for MathML spacing rules, false for TeX rules
-                skipAttributes: {},            // RFDa and other attributes NOT to copy to the output
-                exFactor: .5,                  // default size of ex in em units
-                displayAlign: 'center',        // default for indentalign when set to 'auto'
-                displayIndent: '0',            // default for indentshift when set to 'auto'
-                fontCache: 'none',             // or 'global' or 'none'
-                localID: null,                 // ID to use for local font cache (for single equation processing)
-                internalSpeechTitles: true,    // insert <title> tags with speech content
-                titleID: 0                     // initial id number to use for aria-labeledby titles
-            },
-            tex: {
-                tags: 'ams',
-                packages: {
-                    '[+]': ['ams']
-                },
-                macros: {
-                    R: "{\\mathrm{{I}\\kern-.15em{R}}}",
-                    laplace: "{\\Delta}",
-                    grad: "{\\nabla}",
-                    T: "^{\\mathsf{T}}",
-                    norm: ['\\left\\Vert #1 \\right\\Vert', 1],
-                    iprod: ['\\left\\langle #1 \\right\\rangle', 1],
-                    vec: ['\\boldsymbol{\\mathbf{#1}}', 1],
-                    mat: ['\\boldsymbol{\\mathbf{#1}}', 1],
-                    set: ['\\mathcal{#1}', 1],
-                    func: ['\\mathrm{#1}', 1],
-                    trans: ['{#1}\\mkern-1mu^{\\mathsf{T}}', 1],
-                    matrix: ['\\begin{bmatrix} #1 \\end{bmatrix}', 1],
-                    vector: ['\\begin{pmatrix} #1 \\end{pmatrix}', 1],
-                    of: ['\\mkern{-2mu}\\left( #1 \\right\)', 1],
-                    diff: ['\\frac{\\mathrm{d}{#1}}{\\mathrm{d}{#2}}', 2],
-                    pdiff: ['\\frac{\\partial {#1}}{\\partial {#2}}', 2],
-
-                    vc: ['\\mathbf{#1}', 1],
-                    abs: ['\\lvert#1\\rvert', 1],
-                    norm: ['\\lVert#1\\rVert', 1],
-                    det: ['\\lvert#1\\rvert', 1],
-                    qt: ['\\hat{\\vc {#1}}', 1],
-                    mt: ['\\boldsymbol{#1}', 1],
-                    pt: ['\\boldsymbol{#1}', 1],
-                    textcolor: ['\\color{#1}', 1]
-                }
-            },
-            options: {
-                // disable menu
-                renderActions: {
-                    addMenu: [0, '', '']
-                },
-            }
-        };
-    </script>
-    <script type="text/javascript" id="MathJax-script" async src="support/vendor/mathjax/tex-svg.js">
-    </script>
-
-    <script>
-      var socket = new WebSocket("ws://" + location.host + "/reload");
-      socket.onmessage = function (event) {
-        if (event.data.startsWith("reload!")) 
-          window.location.reload(true);
-      };
-    </script>
-
-                        <link rel="stylesheet" href="css/template.css">
-            </head>
-
-    <body class="document handout" onload="initHandout();">
-                        <header>
-          <h1 class="title">Reproducible Semi-Immersive Analysis of Georeferenced Datasets</h1>
-                    <h2 class="subtitle">ZBW Kolloquium</p>
-                              <p class="lead author">Armin Bernstetter</p>
-                              <p id="date" class="lead">24.10.2023</p>
-                  </header>
-                
-<!-- body must not be indented or code blocks render badly -->
-<!-- The following line must be left aligned! -->
-<section class="slide level1">
-
-<div class="slide-wrapper">
-<hr />
 <section id="section" class="slide level1 columns">
 <h1 class="columns"></h1>
 <div class="multi-column-row multi-column-row-3">
@@ -174,15 +147,9 @@
 </div>
 </div>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="immersive-analytics" class="slide level1" style="text-align:center">
 <h1 style="text-align:center">IMMERSIVE ANALYTICS</h1>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="visual-analytics" class="slide level1">
 <h1>Visual Analytics</h1>
 <div class="box columns fragment">
@@ -199,10 +166,12 @@
 <!-- Problem: How to assess the value of visualization? -->
 <!-- - Value of Visualization [@vanwijk2005value] -->
 </div>
+<aside class="notes">
+<h2></h2>
+<p>Overall, we are located in the area of Human-Computer Interaction or Human-Data Interaction. I will not go fully into detail here because the terms themselves are self-explanatory enough for this talk.</p>
+<p>In contrast to e.g. automated data analytics by machine learning or other computer-based techniques, visual analytics is performed by humans through interaction with visualized data.</p>
+</aside>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="immersion" class="slide level1 columns">
 <h1 class="columns">Immersion</h1>
 <div class="single-column-row">
@@ -222,18 +191,13 @@
 <div class="box columns bottom fragment" data-align="center" style="display: inline-flex;  justify-content: space-evenly;">
 <h2 class="bottom" data-align="center" style="display: inline-flex;  justify-content: space-evenly;" id="section-4"></h2>
 <p><figure class="decker" alt="CAVE_Crayoland.jpg" style="width:30%;"><img class="decker" data-src="assets/img/CAVE_Crayoland.jpg"><figcaption class="decker">The CAVE - Audio Visual Experience Automatic Virtual Environment. <span class="citation" data-cites="cruzneira1992cave">(Cruz-Neira et al. 1992)</span></figcaption></figure> <figure class="decker" alt="Vive_pre.jpeg" style="width:30%;"><img class="decker" data-src="assets/img/Vive_pre.jpeg"><figcaption class="decker">HTC Vive Pre Head-Mounted Display with two wireless handheld controllers (bottom) and two “Lighthouse” tracking stations (cubes)</figcaption></figure></p>
-<!-- # ARENA2 Visualization Lab {.columns .fragments style="text-align:center"} --><section id="arena2" class="slide level1" style="color:white">
-<h1 style="color:white">ARENA2  </h1>
-<div>
-<img class="decker" data-src="assets/img/2019-10-16_Arena-0191-nikolas-linke_credit.jpg" alt="2019-10-16_Arena-0191-nikolas-linke_credit.jpg">
-</div>
-</section>
+<!-- # ARENA2 Visualization Lab {.columns .fragments style="text-align:center"} -->
 </div>
 </div>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
+<section id="arena2" class="slide level1" data-background-image="assets/img/2019-10-16_Arena-0191-nikolas-linke_credit.jpg" style="color:white">
+<h1 data-background-image="assets/img/2019-10-16_Arena-0191-nikolas-linke_credit.jpg" style="color:white">ARENA2  </h1>
+</section>
 <section id="immersive-and-collaborative-visual-analytics" class="slide level1">
 <h1>Immersive and Collaborative Visual Analytics</h1>
 <div class="box columns fragment">
@@ -253,16 +217,10 @@
 <p><strong>Environment for co-located, synchronous collaboration inside a spatially immersive setting.</strong></p>
 </div>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="development-for-immersive-analytics" class="slide level1" style="text-align:center">
 <h1 style="text-align:center">DEVELOPMENT FOR IMMERSIVE ANALYTICS<span class="math inline">\(^*\)</span></h1>
 <p><span style="position: absolute;  bottom: 10%;  left: 6%;  font-size: small;"> <span class="math inline">\(^*\)</span>at ARENA2 </span></p>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="unreal-engine" class="slide level1 columns">
 <h1 class="columns">Unreal Engine</h1>
 <div class="multi-column-row multi-column-row-3">
@@ -287,16 +245,10 @@
 </div>
 </div>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="virtual-production" class="slide level1">
 <h1>Virtual Production</h1>
 <figure class="decker" alt="virtual_prod.png"><img class="decker" data-src="assets/img/virtual_prod.png"><figcaption class="decker">Virtual production stage <strong>“The Volume”</strong> for The Mandalorian</figcaption></figure>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="virtual-production-technology" class="slide level1">
 <h1>Virtual Production Technology</h1>
 <div class="column" style="width:40%;">
@@ -313,26 +265,17 @@ nDisplay Plugin
 </ul>
 </div>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="doing-actual-science-with-it" class="slide level1">
 <h1>DOING ACTUAL SCIENCE WITH IT</h1>
 </section>
-<section id="section-7" class="slide level1">
-<h1> </h1>
-<div>
-<img class="decker" data-src="assets/img/scientific_workflow.jpg" alt="scientific_workflow.jpg">
-</div>
+<section id="section-7" class="slide level1" data-background-image="../assets/img/scientific_workflow.jpg">
+<h1 data-background-image="../assets/img/scientific_workflow.jpg"> </h1>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="fieldwork-in-geology" class="slide level1">
 <h1>Fieldwork in Geology</h1>
 <div class="box columns" style="display:flex; justify-content:space-between">
 <h2 style="display:flex; justify-content:space-between" id="section-8"></h2>
-<p><figure class="decker" alt="fieldwork.jpg" style="width:33%;"><img class="decker" data-src="assets/img/fieldwork.jpg"><figcaption class="decker">D. Garbe-Schönberg</figcaption></figure> <figure class="decker" alt="geocompass.jpg" style="width:33%;"><img class="decker" data-src="assets/img/geocompass.jpg"><figcaption class="decker">Wikimedia: Setup of a modern geological compass after Prof. Clar (Freiberger) (<a href="https://en.wikipedia.org/wiki/Geological_compass">https://en.wikipedia.org/wiki/Geological_compass</a>)</figcaption></figure> <figure class="decker" alt="fieldnotebook.jpg" style="width:33%;"><img class="decker" data-src="assets/img/fieldnotebook.jpg"><figcaption class="decker">UCL Earth Sciences: “An Idiot’s Guide to Fieldwork and Notebooks” by David Dobson (<a href="https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching">https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching.html</a>)</figcaption></figure></p>
+<p><figure class="decker" alt="fieldwork.jpg" style="width:33%;"><img class="decker" data-src="assets/img/fieldwork.jpg"><figcaption class="decker">D. Garbe-Schönberg</figcaption></figure> <figure class="decker" alt="geocompass.jpg" style="width:33%;"><img class="decker" data-src="../assets/img/geocompass.jpg"><figcaption class="decker">Wikimedia: Setup of a modern geological compass after Prof. Clar (Freiberger) (<a href="https://en.wikipedia.org/wiki/Geological_compass">https://en.wikipedia.org/wiki/Geological_compass</a>)</figcaption></figure> <figure class="decker" alt="fieldnotebook.jpg" style="width:33%;"><img class="decker" data-src="../assets/img/fieldnotebook.jpg"><figcaption class="decker">UCL Earth Sciences: “An Idiot’s Guide to Fieldwork and Notebooks” by David Dobson (<a href="https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching">https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching.html</a>)</figcaption></figure></p>
 </div>
 <div class="box columns fragment">
 <h2 id="how-to-do-this-under-water">How to do this under water?</h2>
@@ -341,9 +284,6 @@ nDisplay Plugin
 <h2 id="virtual-fieldwork-in-immersive-environments">🡆 Virtual fieldwork in immersive environments</h2>
 </div>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="georeferencing-data" class="slide level1">
 <h1>Georeferencing Data</h1>
 <p>Geospatial data from the real world needs to be in a <strong>Coordinate Reference System</strong> to express the location and be able to make queries that give realistic results (e.g. real distance between two points in a 3D model)</p>
@@ -353,9 +293,6 @@ nDisplay Plugin
 <li>Altitude = Height in meters to the reference ellipsoid (i.e. an approximate representation of the Earth).</li>
 </ul>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="cesium" class="slide level1">
 <h1>Cesium</h1>
 <ul>
@@ -367,9 +304,6 @@ nDisplay Plugin
 <img class="decker" data-src="assets/img/cesium.png" alt="cesium.png" style="width:75%;">
 </div>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="cesium-for-unreal" class="slide level1">
 <h1>Cesium for Unreal</h1>
 <!-- ## {style="display:ruby; justify-content:space-between"} -->
@@ -378,9 +312,6 @@ nDisplay Plugin
 <p><img class="decker" data-src="assets/img/cesium-unreal.png" alt="cesium-unreal.png" style="width:70%;"> <figure class="decker" alt="HighresScreenshot00006.png" style="width:70%;"><img class="decker" data-src="assets/img/HighresScreenshot00006.png"><figcaption class="decker">Black Smoker Photogrammetry Model in Unreal Engine</figcaption></figure></p>
 </div>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="what-does-this-mean" class="slide level1">
 <h1>What does this mean?</h1>
 <div class="box columns fragment">
@@ -397,15 +328,9 @@ nDisplay Plugin
 <p><span style="position: absolute;  bottom: 10%;  left: 6%;  font-size: small;"> <span class="math inline">\(^*\)</span>for people playing buzzword bingo right now </span></p>
 </div>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="reproducibility-and-provenance" class="slide level1">
 <h1>REPRODUCIBILITY AND PROVENANCE</h1>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="the-proposed-immersive-analytics-workflow" class="slide level1 columns">
 <h1 class="columns">The proposed Immersive Analytics Workflow</h1>
 <div class="multi-column-row multi-column-row-3">
@@ -437,9 +362,6 @@ nDisplay Plugin
 </div>
 </div>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="provenance" class="slide level1">
 <h1>Provenance</h1>
 <div class="box columns example fragment">
@@ -448,9 +370,6 @@ nDisplay Plugin
 <p>- World Wide Web Consortium <span class="citation" data-cites="2013provoverview">(Groth and Moreau 2013)</span></p>
 </div>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="the-value-of-visualization" class="slide level1">
 <h1>The Value of Visualization</h1>
 <div class="box columns">
@@ -468,16 +387,10 @@ nDisplay Plugin
 </ul>
 </div>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="the-digital-lab-book" class="slide level1">
 <h1>The Digital Lab Book</h1>
 <img class="decker" data-src="assets/img/digital-lab-book_notext.png" alt="digital-lab-book_notext.png">
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="section-16" class="slide level1">
 <h1></h1>
 <div class="box columns" style="text-align:center">
@@ -485,9 +398,6 @@ nDisplay Plugin
 <figure class="decker" alt="ModifiedReproducibleJourney.jpg" style="width:65%;"><img class="decker" data-src="assets/img/ModifiedReproducibleJourney.jpg"><figcaption class="decker">This modified illustration was originally created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. <a href="https://doi.org/10.5281/zenodo.3332807">DOI: 10.5281/zenodo.3332807</a></figcaption></figure>
 </div>
 </section>
-</div>
-<div class="slide-wrapper">
-<hr />
 <section id="references" class="slide level1 unnumbered">
 <h1 class="unnumbered">References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
@@ -505,28 +415,185 @@ vanWijk, Jarke J. 2005. <span>“The Value of Visualization.”</span> In <em>IE
 </div>
 </div>
 </section>
-</div>
-</section>
-<!-- The previous line must be left aligned! -->
+    </div>
+  </div>
 
-        <script src="support/vendor/js/jquery.min.js" type="text/javascript"></script>
-        <script src="support/vendor/js/lazyload.min.js" type="text/javascript"></script>
-        <script src="support/js/handout.js"></script>
+  <script src="support/vendor/reveal/js/reveal.js"></script>
+  <script src="support/vendor/js/jquery.min.js"></script>
+  <script src="support/vendor/videojs/video.min.js"></script>
+  <script src="support/js/decker.js"></script>
+  <script src="support/js/sage.js"></script>
+  
+  <script>
+      // this has to be done before reveal highlight plugin is initialized
+      prepareCodeHighlighting();
+      prepareSAGE();
+  </script>
 
-        <script type="module">
-          import {prepareExaminer} from "./support/examiner/examiner.js";
-          prepareExaminer();
-        </script>
 
-                        <hr>
-        <address>
-                    <p class="date">24.10.2023</p>
-                    <p class="author"> Armin Bernstetter</p>
-                  </address>
-        <script>
-          var lazyLoadInstance = new LazyLoad({
-            elements_selector: "img, video, iframe"
-          });
-        </script>
-            </body>
-  </html>
+  <link rel="stylesheet" href="support/examiner/examiner.css">
+  <script type="module">
+    import {prepareExaminer} from "./support/examiner/examiner.js";
+    prepareExaminer();
+  </script>
+
+
+
+
+
+  <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        pdfMaxPagesPerSlide: 10,
+        pdfSeparateFragments: false,
+        // Display controls in the bottom right corner
+        controls: Decker.meta.controls,
+        // Display a presentation progress bar
+        progress: true,
+        // Display the page number of the current slide
+        slideNumber: 'true',
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+        // Push each slide change to the browser history
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Loop the presentation
+        // Change the presentation direction to be RTL
+	// Randomizes the order of slides each time the presentation loads
+        // Turns fragments on and off globally
+        fragments: true,
+        fragmentInURL: true,
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Flags if speaker notes should be visible to all viewers
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        // Stop auto-sliding after user input
+          // Hide cursor if inactive
+          hideInactiveCursor: true,
+          // Time before the cursor is hidden (in ms)
+          hideCursorTime: 2000.0,
+        // Transition style
+        transition: 'Fade', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
+        // Factor of the display size that should remain empty around the content
+        margin: 5.0e-2,
+        // whether to mark y-overflowing slides by a red border
+        checkOverflow: false,
+
+
+        // whether to use vertical slides (in decker.js)
+         verticalSlides: true,
+
+
+        // setup reveal-menu
+        menu: {
+          side: 'left',
+          width: 'wide',
+          numbers: false,
+          titleSelector: 'h1',
+          useTextContentForMissingTitles: false,
+          hideMissingTitles: false,
+          markers: true,
+          custom: false,  
+          themes: false,
+          transitions: false,
+          openButton: true,
+          openSlideNumber: true,
+          keyboard: true,
+          sticky: false,
+          autoOpen: true,
+          delayInit: false,
+          openOnInit: false,
+          loadIcons: false
+	    },
+
+        // mathjax
+        math: {
+          mathjax: String.raw`support/vendor/mathjax/`,
+          macros: {
+              R:         "{{\\mathrm{{I}\\kern-.15em{R}}}}",
+              laplace:   "{\\Delta}",
+              grad:      "{\\nabla}",
+              T:         "^{\\mathsf{T}}",
+              abs:       ['\\left\\lvert #1 \\right\\rvert', 1],
+              det:       ['\\left\\lvert #1 \\right\\rvert', 1],
+              norm:      ['\\left\\Vert #1 \\right\\Vert', 1],
+              iprod:     ['\\left\\langle #1 \\right\\rangle', 1],
+              vec:       ['{\\mathbf{\\boldsymbol{#1}}}', 1],
+              mat:       ['{\\mathbf{\\boldsymbol{#1}}}', 1],
+              set:       ['\\mathcal{#1}', 1],
+              func:      ['\\mathrm{#1}', 1],
+              trans:     ['{#1}\\mkern-1mu^{\\mathsf{T}}', 1],
+              matrix:    ['\\begin{bmatrix} #1 \\end{bmatrix}', 1],
+              vector:    ['\\begin{pmatrix} #1 \\end{pmatrix}', 1],
+              of:        ['\\left( #1 \\right\)', 1],
+              diff:      ['\\frac{\\mathrm{d}{#1}}{\\mathrm{d}{#2}}', 2],
+              pdiff:     ['\\frac{\\partial {#1}}{\\partial {#2}}', 2],
+              vc:        ['{\\mathbf{\\boldsymbol{#1}}}', 1],
+              qt:        ['\\hat{\\vc {#1}}', 1],
+              mt:        ['{\\mathbf{\\boldsymbol{#1}}}', 1],
+              pt:        ['\\boldsymbol{#1}', 1],
+              textcolor: ['\\color{#1}', 1]
+          }
+        },
+
+          // setup charts
+          chart: {
+              defaults: {
+                  global: {
+                      tooltips: {
+                          mode: 'point',
+                          intersect: true,
+                      },
+                      legend: { position: "bottom" },
+                      plugins: { colorschemes: { scheme: "tableau.Classic10" } }
+                  },
+              },
+              bar:   { borderWidth: "1" },
+              line:  { borderWidth: "2", tension: "0" },
+              radar: { borderWidth: "2" }
+          },
+
+
+
+       
+
+        
+          // plugins
+          dependencies: [
+              { src: String.raw`support/plugins/charts/Chart.js`},
+              { src: String.raw`support/plugins/charts/plugin-errorbars.js`},
+              { src: String.raw`support/plugins/charts/plugin-colorschemes.js`},
+              { src: String.raw`support/plugins/charts/plugin-csszoom.js`},
+              { src: String.raw`support/plugins/charts/csv2chart.js`},
+              { src: String.raw`support/plugins/math/math.js` },
+              { src: String.raw`support/plugins/whiteboard/whiteboard.js`},
+              { src: String.raw`support/plugins/zoom/zoom.js` },
+              { src: String.raw`support/plugins/print/print.js` },
+              { src: String.raw`support/plugins/search/search.js`, async: true },
+              { src: String.raw`support/plugins/quiz-wue/quiz-wue.js` },
+ 
+    
+              { src: String.raw`support/plugins/menu/menu.js`, async: true },
+              { src: String.raw`support/plugins/explain/explain.js` },
+              { src: String.raw`support/vendor/reveal/plugin/notes/notes.js`, async: true }
+          ]
+      });
+  </script>
+
+    </body>
+</html>

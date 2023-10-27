@@ -5,11 +5,11 @@ controls: true
 csl: 'chicago-author-date.csl'
 menu: true
 title: Reproducible Semi-Immersive Analysis of Georeferenced Datasets
-subtitle: ZBW Kolloquium
+subtitle: MarDATA Retreat 2023
 author: Armin Bernstetter
 slideNumber: true
 transition: Fade
-date: 24.10.2023
+date: 06.11.2023
 ---
 
 # {.columns}
@@ -144,14 +144,14 @@ $^*$at ARENA2
 
 # DOING ACTUAL SCIENCE WITH IT
 
-# ![](assets/img/scientific_workflow.jpg)
+# ![](../assets/img/scientific_workflow.jpg)
 
 # Fieldwork in Geology
 
 ## {style="display:flex; justify-content:space-between"}
 ![D. Garbe-Schönberg](assets/img/fieldwork.jpg){width=33%}
-![Wikimedia: Setup of a modern geological compass after Prof. Clar (Freiberger) ([https://en.wikipedia.org/wiki/Geological_compass](https://en.wikipedia.org/wiki/Geological_compass))](assets/img/geocompass.jpg){width=33%}
-![UCL Earth Sciences: "An Idiot's Guide to Fieldwork and Notebooks" by David Dobson ([https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching.html](https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching))](assets/img/fieldnotebook.jpg){width=33%}
+![Wikimedia: Setup of a modern geological compass after Prof. Clar (Freiberger) ([https://en.wikipedia.org/wiki/Geological_compass](https://en.wikipedia.org/wiki/Geological_compass))](../assets/img/geocompass.jpg){width=33%}
+![UCL Earth Sciences: "An Idiot's Guide to Fieldwork and Notebooks" by David Dobson ([https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching.html](https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching))](../assets/img/fieldnotebook.jpg){width=33%}
 
 
 ## How to do this under water? { .fragment}
