@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="generator" content="pandoc">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">         <meta name="author" content="Armin Bernstetter">           <title>Reproducible Semi-Immersive Analysis of Georeferenced Datasets</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">         <meta name="author" content="Armin Bernstetter (he/him)">           <title>Developing Immersive Applications for the Reproducible Analysis of Geospatial Data</title>
         <style type="text/css">
         :root {
                 /* This is the global variable for the default alignment. Defaults to left.    */
@@ -136,9 +136,9 @@
 
     <body class="document handout" onload="initHandout();">
                         <header>
-          <h1 class="title">Reproducible Semi-Immersive Analysis of Georeferenced Datasets</h1>
+          <h1 class="title">Developing Immersive Applications for the Reproducible Analysis of Geospatial Data</h1>
                     <h2 class="subtitle">MarDATA Retreat 2023</p>
-                              <p class="lead author">Armin Bernstetter</p>
+                              <p class="lead author">Armin Bernstetter (he/him)</p>
                               <p id="date" class="lead">06.11.2023</p>
                   </header>
                 
@@ -151,19 +151,13 @@
 <section id="section" class="slide level1 columns">
 <h1 class="columns"></h1>
 <div class="multi-column-row multi-column-row-3">
-<div class="grow-1 column column-1" style="text-align:center">
-<div class="box columns left" style="text-align:center">
-<h2 class="left" style="text-align:center" id="section-1"></h2>
-<img class="decker" data-src="assets/img/Bernstetter_Foto2.jpg" alt="Bernstetter_Foto2.jpg">
-</div>
-</div>
-<div class="grow-1 column column-3">
-<div class="box columns right">
-<h2 class="right" id="armin-bernstetter">Armin Bernstetter</h2>
+<div class="grow-1 column column-1">
+<div class="box columns left">
+<h2 class="left" id="armin-bernstetter">Armin Bernstetter</h2>
 <ul>
 <li>M.Sc. Computer Science (University of Würzburg)</li>
 <li>GEOMAR Helmholtz Centre for Ocean Research Kiel</li>
-<li>MarDATA Helmholtz School for Marine Data Science</li>
+<li><span class="math inline">\(2^{nd}\)</span> MarDATA cohort</li>
 <li>Supervision:
 <ul>
 <li>Prof. Dr. Isabella Peters (ZBW/CAU)</li>
@@ -172,7 +166,20 @@
 </ul>
 </div>
 </div>
+<div class="grow-1 column column-3">
+<div class="box columns right">
+<h2 class="right" id="section-1"></h2>
+<img class="decker" data-src="assets/img/Bernstetter_Foto2.jpg" alt="Bernstetter_Foto2.jpg">
 </div>
+</div>
+</div>
+</section>
+</div>
+<div class="slide-wrapper">
+<hr />
+<section id="section-2" class="slide level1" style="text-align:center">
+<h1 style="text-align:center"></h1>
+<figure class="decker" alt="qr-code.png" style="width:30%;"><img class="decker" data-src="assets/img/qr-code.png"><figcaption class="decker">Slides for this talk</figcaption></figure>
 </section>
 </div>
 <div class="slide-wrapper">
@@ -190,14 +197,18 @@
 <p>Representing data in a way to be understood by humans</p>
 </div>
 <div class="box columns fragment">
-<h2 id="visual-data-exploration">Visual Data Exploration</h2>
+<h2 id="visual-data-exploration">+ Visual Data Exploration</h2>
 <p>Exploring data by interacting with visualizations</p>
 </div>
 <div class="box columns fragment">
-<h2 id="sensemaking">Sensemaking</h2>
+<h2 id="sensemaking">+ Sensemaking</h2>
 <p>Gaining knowledge and insight through data exploration</p>
 <!-- Problem: How to assess the value of visualization? -->
 <!-- - Value of Visualization [@vanwijk2005value] -->
+<hr>
+</div>
+<div class="box columns fragment">
+<h2 id="visual-analytics-1">= Visual Analytics</h2>
 </div>
 </section>
 </div>
@@ -207,7 +218,7 @@
 <h1 class="columns">Immersion</h1>
 <div class="single-column-row">
 <div class="box columns top">
-<h2 class="top" id="section-3"></h2>
+<h2 class="top" id="section-4"></h2>
 <ul>
 <li class="fragment">A feeling of being <strong>immersed</strong> and <strong>present</strong> in a virtual environment</li>
 <li class="fragment">Varying degrees and aspects of immersion (spatial immersion, 3D/stereoscopy, head tracking, surround sound, …)</li>
@@ -220,8 +231,11 @@
 </div>
 <div class="single-column-row">
 <div class="box columns bottom fragment" data-align="center" style="display: inline-flex;  justify-content: space-evenly;">
-<h2 class="bottom" data-align="center" style="display: inline-flex;  justify-content: space-evenly;" id="section-4"></h2>
+<h2 class="bottom" data-align="center" style="display: inline-flex;  justify-content: space-evenly;" id="section-5"></h2>
 <p><figure class="decker" alt="CAVE_Crayoland.jpg" style="width:30%;"><img class="decker" data-src="assets/img/CAVE_Crayoland.jpg"><figcaption class="decker">The CAVE - Audio Visual Experience Automatic Virtual Environment. <span class="citation" data-cites="cruzneira1992cave">(Cruz-Neira et al. 1992)</span></figcaption></figure> <figure class="decker" alt="Vive_pre.jpeg" style="width:30%;"><img class="decker" data-src="assets/img/Vive_pre.jpeg"><figcaption class="decker">HTC Vive Pre Head-Mounted Display with two wireless handheld controllers (bottom) and two “Lighthouse” tracking stations (cubes)</figcaption></figure></p>
+</div>
+<div class="box columns fragment">
+<h2 id="visual-analytics-immersion-immersive-analytics">Visual Analytics + Immersion = Immersive Analytics</h2>
 <!-- # ARENA2 Visualization Lab {.columns .fragments style="text-align:center"} --><section id="arena2" class="slide level1" style="color:white">
 <h1 style="color:white">ARENA2  </h1>
 <div>
@@ -242,15 +256,16 @@
 <!-- *(@marriott2018immersive, @skarbez2019immersive, @fonnet2021survey)* -->
 </div>
 <div class="box columns fragment">
-<h2 id="collaborative-visual-analytics">Collaborative Visual Analytics</h2>
+<h2 id="collaborative-visual-analytics">+ Collaborative Visual Analytics</h2>
 <!-- *The shared use of computer-supported, (interactive) visual representations of data by more than one person with the common goal of contribution to joint information processing activities.*   -->
 <p>Joint visual data exploration by more than one person</p>
-<p>Can be co-located or not, synchronous or asynchronous</p>
+<p>Can be co-located or remote, synchronous or asynchronous</p>
 <!-- *(@keel2006collaborative, @heer2008design, @isenberg2011collaborative)* -->
+<hr>
 </div>
-<div class="box columns example fragment">
-<h2 class="example" id="arena2-1">ARENA2</h2>
-<p><strong>Environment for co-located, synchronous collaboration inside a spatially immersive setting.</strong></p>
+<div class="box columns fragment">
+<h2 id="arena2-environment-for-collaborative-semi-immersive-analytics">= ARENA2: Environment for collaborative (semi-)immersive analytics</h2>
+<!-- **Environment for co-located, synchronous collaboration in a spatially immersive setting.** -->
 </div>
 </section>
 </div>
@@ -268,19 +283,19 @@
 <div class="multi-column-row multi-column-row-3">
 <div class="grow-1 column column-1">
 <div class="box columns left">
-<h2 class="left" id="section-5"></h2>
+<h2 class="left" id="section-6"></h2>
 <img class="decker" data-src="assets/img/UE_Logo_icon-only_black.svg" alt="UE_Logo_icon-only_black.svg" style="width:75%;">
 </div>
 </div>
 <div class="grow-1 column column-3">
 <div class="box columns right">
-<h2 class="right" id="section-6"></h2>
+<h2 class="right" id="section-7"></h2>
 <ul>
 <li>Originally a video game engine</li>
 <li>Developed by Epic Games</li>
 <li>Today branded as <em>“powerful real-time 3D creation tool”</em></li>
 <li>Free to use, source-available software</li>
-<li>Huge ecosystem</li>
+<li>Ever-expanding ecosystem</li>
 <li>Used in game development, architecture, simulation, research, film making …</li>
 </ul>
 </div>
@@ -318,12 +333,7 @@ nDisplay Plugin
 <hr />
 <section id="doing-actual-science-with-it" class="slide level1">
 <h1>DOING ACTUAL SCIENCE WITH IT</h1>
-</section>
-<section id="section-7" class="slide level1">
-<h1> </h1>
-<div>
-<img class="decker" data-src="../assets/img/scientific_workflow.jpg" alt="scientific_workflow.jpg">
-</div>
+<!-- # ![](../assets/img/scientific_workflow.jpg) -->
 </section>
 </div>
 <div class="slide-wrapper">
@@ -347,11 +357,9 @@ nDisplay Plugin
 <section id="georeferencing-data" class="slide level1">
 <h1>Georeferencing Data</h1>
 <p>Geospatial data from the real world needs to be in a <strong>Coordinate Reference System</strong> to express the location and be able to make queries that give realistic results (e.g. real distance between two points in a 3D model)</p>
-<ul>
-<li>Latitude = Elevation in degrees to the Equator</li>
-<li>Longitude = Azimuth in degrees to the Prime Meridian (Greenwich)</li>
-<li>Altitude = Height in meters to the reference ellipsoid (i.e. an approximate representation of the Earth).</li>
-</ul>
+<!-- - Latitude = Elevation in degrees to the Equator
+- Longitude = Azimuth in degrees to the Prime Meridian (Greenwich)
+- Altitude = Height in meters to the reference ellipsoid (i.e. an approximate representation of the Earth).  -->
 </section>
 </div>
 <div class="slide-wrapper">
@@ -381,8 +389,8 @@ nDisplay Plugin
 </div>
 <div class="slide-wrapper">
 <hr />
-<section id="what-does-this-mean" class="slide level1">
-<h1>What does this mean?</h1>
+<section id="this-means" class="slide level1">
+<h1>This means:</h1>
 <div class="box columns fragment">
 <h2 id="create-georeferenced-virtual-and-immersive-environments">🡆 Create georeferenced virtual and immersive environments</h2>
 </div>
@@ -420,7 +428,7 @@ nDisplay Plugin
 <div class="box columns center fragment">
 <h2 class="center" id="section-12"></h2>
 <p><br> <br></p>
-<figure class="decker" alt="Picture2.jpg"><img class="decker" data-src="assets/img/Picture2.jpg"><figcaption class="decker">Sensemaking through visual data exploration and analysis</figcaption></figure>
+<figure class="decker" alt="Picture2.jpg"><img class="decker" data-src="assets/img/Picture2.jpg"><figcaption class="decker">Sensemaking through immersive analytics</figcaption></figure>
 </div>
 </div>
 <div class="grow-1 column column-3">
@@ -453,7 +461,7 @@ nDisplay Plugin
 <hr />
 <section id="the-value-of-visualization" class="slide level1">
 <h1>The Value of Visualization</h1>
-<div class="box columns">
+<div class="box columns fragment">
 <h2 id="section-15"></h2>
 <p>The value is a trade-off between the costs (e.g. the effort to understand a visualization) and the gained knowledge.</p>
 <p><em>“Just claiming that a visualization gives insight is not enough, if we want to offer additional value.”</em> <span class="citation" data-cites="vanwijk2005value">(vanWijk 2005)</span></p>
@@ -521,7 +529,7 @@ vanWijk, Jarke J. 2005. <span>“The Value of Visualization.”</span> In <em>IE
                         <hr>
         <address>
                     <p class="date">06.11.2023</p>
-                    <p class="author"> Armin Bernstetter</p>
+                    <p class="author"> Armin Bernstetter (he/him)</p>
                   </address>
         <script>
           var lazyLoadInstance = new LazyLoad({

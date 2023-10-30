@@ -4,9 +4,9 @@ chalkboard: 'template-deck.json'
 controls: true
 csl: 'chicago-author-date.csl'
 menu: true
-title: Reproducible Semi-Immersive Analysis of Georeferenced Datasets
+title: Developing Immersive Applications for the Reproducible Analysis of Geospatial Data
 subtitle: MarDATA Retreat 2023
-author: Armin Bernstetter
+author: Armin Bernstetter (he/him)
 slideNumber: true
 transition: Fade
 date: 06.11.2023
@@ -14,18 +14,24 @@ date: 06.11.2023
 
 # {.columns}
 
-## {.left style="text-align:center"}
-
-![](assets/img/Bernstetter_Foto2.jpg)
-
-## Armin Bernstetter {.right}
+## Armin Bernstetter {.left}
 
 - M.Sc. Computer Science (University of Würzburg)
 - GEOMAR Helmholtz Centre for Ocean Research Kiel
-- MarDATA Helmholtz School for Marine Data Science
+- $2^{nd}$ MarDATA cohort
 - Supervision: 
   - Prof. Dr. Isabella Peters (ZBW/CAU)
   - Dr. Tom Kwasnitschka (GEOMAR)
+
+
+##  {.right}
+
+![](assets/img/Bernstetter_Foto2.jpg)
+
+# {style="text-align:center"}
+
+
+![Slides for this talk](assets/img/qr-code.png){width=30%}
 
 
 # IMMERSIVE ANALYTICS {style="text-align:center"}
@@ -36,15 +42,18 @@ date: 06.11.2023
 
 Representing data in a way to be understood by humans
 
-## Visual Data Exploration {.fragment}
+## + Visual Data Exploration {.fragment}
 
 Exploring data by interacting with visualizations
 
-## Sensemaking {.fragment}
+## + Sensemaking {.fragment}
 Gaining knowledge and insight through data exploration
 
 <!-- Problem: How to assess the value of visualization? -->
 <!-- - Value of Visualization [@vanwijk2005value] -->
+<hr>
+
+## = Visual Analytics {.fragment}
 
 # {.notes}
 
@@ -65,6 +74,7 @@ In contrast to e.g. automated data analytics by machine learning or other comput
 ![The CAVE - Audio Visual Experience Automatic Virtual Environment. [@cruzneira1992cave]](assets/img/CAVE_Crayoland.jpg){width=30%}
 ![HTC Vive Pre Head-Mounted Display with two wireless handheld controllers (bottom) and two "Lighthouse" tracking stations (cubes)](assets/img/Vive_pre.jpeg){width=30%}
 
+## Visual Analytics + Immersion = Immersive Analytics {.fragment}
 
 <!-- # ARENA2 Visualization Lab {.columns .fragments style="text-align:center"} -->
 # ARENA2 ![](assets/img/2019-10-16_Arena-0191-nikolas-linke_credit.jpg) {style="color:white"}
@@ -78,19 +88,20 @@ Visual data exploration inside an immersive virtual environment
 
 <!-- *(@marriott2018immersive, @skarbez2019immersive, @fonnet2021survey)* -->
 
-## Collaborative Visual Analytics {.fragment}
+## + Collaborative Visual Analytics {.fragment}
 <!-- *The shared use of computer-supported, (interactive) visual representations of data by more than one person with the common goal of contribution to joint information processing activities.*   -->
 
 Joint visual data exploration by more than one person
 
-Can be co-located or not, synchronous or asynchronous
+Can be co-located or remote, synchronous or asynchronous
 
 <!-- *(@keel2006collaborative, @heer2008design, @isenberg2011collaborative)* -->
 
+<hr>
 
-## ARENA2 {.example .fragment}
+## = ARENA2: Environment for collaborative (semi-)immersive analytics {.fragment}
 
-**Environment for co-located, synchronous collaboration inside a spatially immersive setting.**
+<!-- **Environment for co-located, synchronous collaboration in a spatially immersive setting.** -->
 
 
 
@@ -115,7 +126,7 @@ $^*$at ARENA2
 - Developed by Epic Games
 - Today branded as *"powerful real-time 3D creation tool"*
 - Free to use, source-available software
-- Huge ecosystem
+- Ever-expanding ecosystem
 - Used in game development, architecture, simulation, research, film making ...
 
 # Virtual Production
@@ -144,7 +155,7 @@ $^*$at ARENA2
 
 # DOING ACTUAL SCIENCE WITH IT
 
-# ![](../assets/img/scientific_workflow.jpg)
+<!-- # ![](../assets/img/scientific_workflow.jpg) -->
 
 # Fieldwork in Geology
 
@@ -161,9 +172,9 @@ $^*$at ARENA2
 
 Geospatial data from the real world needs to be in a **Coordinate Reference System** to express the location and be able to make queries that give realistic results (e.g. real distance between two points in a 3D model)
 
-- Latitude = Elevation in degrees to the Equator
+<!-- - Latitude = Elevation in degrees to the Equator
 - Longitude = Azimuth in degrees to the Prime Meridian (Greenwich)
-- Altitude = Height in meters to the reference ellipsoid (i.e. an approximate representation of the Earth). 
+- Altitude = Height in meters to the reference ellipsoid (i.e. an approximate representation of the Earth).  -->
 
 # Cesium
 
@@ -182,9 +193,7 @@ Geospatial data from the real world needs to be in a **Coordinate Reference Syst
 ![](assets/img/cesium-unreal.png){width=70%}
 ![Black Smoker Photogrammetry Model in Unreal Engine](assets/img/HighresScreenshot00006.png){width=70%}
 
-# What does this mean?
-
-
+# This means:
 
 ## 🡆 Create georeferenced virtual and immersive environments {.fragment}
 ## 🡆 Interactively query geospatial data in a way that yields actual scientific insight/results {.fragment}
@@ -214,7 +223,7 @@ $^*$for people playing buzzword bingo right now
 <br>
 <br>
 
-![Sensemaking through visual data exploration and analysis](assets/img/Picture2.jpg)
+![Sensemaking through immersive analytics](assets/img/Picture2.jpg)
 
 
 ## {.right .fragment}
@@ -236,7 +245,7 @@ $^*$for people playing buzzword bingo right now
 
 # The Value of Visualization
 
-##
+## {.fragment}
 
 The value is a trade-off between the costs (e.g. the effort to understand a visualization) and the gained knowledge.
 
