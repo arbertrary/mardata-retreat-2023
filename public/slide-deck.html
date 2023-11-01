@@ -6,7 +6,7 @@
   <meta name="generator" content="pandoc">
   <meta name="author" content="Armin Bernstetter (he/him)">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <title>Developing Immersive Applications for the Reproducible Analysis of Geospatial Data</title>
+  <title>Developing Immersive Applications for the Reproducible Analysis of 3D Geospatial Data</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -80,7 +80,7 @@
   <script>
     /* Store JSON encoded Pandoc meta data in a global variable for easy
     reference from any script. */
-    window.Decker = {meta: {"fragmentInURL":true,"controls":true,"border-decoration-padding":"10px","hideCursorTime":"2000.0","transition":"Fade","chalkboard":"template-deck.json","hash":true,"history":false,"progress":true,"meta-data":["./metadata/defaults.yaml"],"border-decoration-width":"20px","center":true,"whiteboard-inactive-color":"lightgrey","whiteboard-icon-size":"2vmin","menu":true,"overview":true,"margin":"5.0e-2","spacing-vertical-base":"0.5em","bibliography":"./example.bib","margin-columns":"0em","test123":"test123","help":true,"provisioning":"Copy","hideInactiveCursor":true,"backgroundTransition":"none","date":"06.11.2023","subtitle":"MarDATA Retreat 2023","csl":"./chicago-author-date.csl","slideNumber":true,"whiteboard-active-color":"rgb(42,157,223)","rsync-destination":{"path":"/some/path","host":"git@gitlab2.informatik.uni-wuerzburg.de"},"zoom":true,"keyboard":true,"touch":true,"author":"Armin Bernstetter (he/him)","title":"Developing Immersive Applications for the Reproducible Analysis of Geospatial Data","template":{"css":"css/template.css","title-page":{"teaser-img":"assets/img/PXL_20230911_144144845.PANO.jpg","affiliation-logo":"assets/logos/footer4.png"}},"dictionary":{"de":{"quiz":{"qmi-drop-hint":"...und hier in die richtige Kategorie einsortieren.","solve-button":"Lösung","reset-button":"Zurücksetzen","input-placeholder":"Eingeben und 'Enter'","qmi-drag-hint":"Objekte per Drag&amp;Drop ziehen...","solution":"Lösung"},"exam":{"points":"Punkte","Medium":"Mittelschwer","solve-button":"Lösen","Easy":"Leicht","reset-button":"Zurücksetzen","Hard":"Schwer","again-button":"Nochmal","placeholder":"Antwort eingeben","solution":"Lösung"}},"en":{"quiz":{"qmi-drop-hint":"...and put them here into the correct category.","reset-button":"Reset","solution-button":"Show Solution","input-placeholder":"Type and press 'Enter'","qmi-drag-hint":"Drag items from here...","solution":"Show Solution"},"exam":{"points":"Points","Medium":"Medium","solve-button":"Solve","Easy":"Easy","reset-button":"Reset","Hard":"Hard","again-button":"Again","placeholder":"Type in answer","solution":"Solution"}}},"align-global":"left","vertical-slides":true,"font-size-base":"28px","fragments":true,"static-resource-dirs":["./assets/"],"whiteboard-background-color":"rgb(250,250,250)","border-decoration-style":"solid"}};
+    window.Decker = {meta: {"fragmentInURL":true,"controls":true,"border-decoration-padding":"10px","hideCursorTime":"2000.0","transition":"Fade","chalkboard":"template-deck.json","hash":true,"history":false,"progress":true,"meta-data":["./metadata/defaults.yaml"],"border-decoration-width":"20px","center":true,"whiteboard-inactive-color":"lightgrey","whiteboard-icon-size":"2vmin","menu":true,"overview":true,"margin":"5.0e-2","spacing-vertical-base":"0.5em","bibliography":"./example.bib","margin-columns":"0em","test123":"test123","help":true,"provisioning":"Copy","hideInactiveCursor":true,"backgroundTransition":"none","date":"06.11.2023","subtitle":"MarDATA Retreat 2023","csl":"./chicago-author-date.csl","slideNumber":true,"whiteboard-active-color":"rgb(42,157,223)","rsync-destination":{"path":"/some/path","host":"git@gitlab2.informatik.uni-wuerzburg.de"},"zoom":true,"keyboard":true,"touch":true,"author":"Armin Bernstetter (he/him)","title":"Developing Immersive Applications for the Reproducible Analysis of 3D Geospatial Data","template":{"css":"css/template.css","title-page":{"teaser-img":"assets/img/title-teaser.jpg","affiliation-logo":"assets/logos/footer4.png"}},"dictionary":{"de":{"quiz":{"qmi-drop-hint":"...und hier in die richtige Kategorie einsortieren.","solve-button":"Lösung","reset-button":"Zurücksetzen","input-placeholder":"Eingeben und 'Enter'","qmi-drag-hint":"Objekte per Drag&amp;Drop ziehen...","solution":"Lösung"},"exam":{"points":"Punkte","Medium":"Mittelschwer","solve-button":"Lösen","Easy":"Leicht","reset-button":"Zurücksetzen","Hard":"Schwer","again-button":"Nochmal","placeholder":"Antwort eingeben","solution":"Lösung"}},"en":{"quiz":{"qmi-drop-hint":"...and put them here into the correct category.","reset-button":"Reset","solution-button":"Show Solution","input-placeholder":"Type and press 'Enter'","qmi-drag-hint":"Drag items from here...","solution":"Show Solution"},"exam":{"points":"Points","Medium":"Medium","solve-button":"Solve","Easy":"Easy","reset-button":"Reset","Hard":"Hard","again-button":"Again","placeholder":"Type in answer","solution":"Solution"}}},"align-global":"left","vertical-slides":true,"font-size-base":"28px","fragments":true,"static-resource-dirs":["./assets/"],"whiteboard-background-color":"rgb(250,250,250)","border-decoration-style":"solid"}};
   </script>
 
   <!-- Printing and PDF exports -->
@@ -104,10 +104,10 @@
                <section id="title-slide" class="title-page">
               <div class="valign-block">
             <div class="valigned">
-                <div class="title"> Developing Immersive Applications for the Reproducible Analysis of Geospatial Data</div>
+                <div class="title"> Developing Immersive Applications for the Reproducible Analysis of 3D Geospatial Data</div>
                                    <div class="subtitle"> MarDATA Retreat 2023 </div>
                                                    <div class="teaser-img">
-                      <img src=assets/img/PXL_20230911_144144845.PANO.jpg>
+                      <img src=assets/img/title-teaser.jpg>
                    </div>
                                                    <div class="date"> 06.11.2023 </div>
                                                    <div class="author"> Armin Bernstetter (he/him) </div>
@@ -176,8 +176,12 @@
 </div>
 <aside class="notes">
 <h2></h2>
-<p>Overall, we are located in the area of Human-Computer Interaction or Human-Data Interaction. I will not go fully into detail here because the terms themselves are self-explanatory enough for this talk.</p>
-<p>In contrast to e.g. automated data analytics by machine learning or other computer-based techniques, visual analytics is performed by humans through interaction with visualized data.</p>
+<p>For our interpretation of visual analytics we have three main columns.</p>
+<ol type="1">
+<li>Visualizing data for humans</li>
+<li>Enabling humans to explore those visualizations interactively</li>
+<li>Using this interaction in a process called sensemaking which results in knowledge and insights</li>
+</ol>
 </aside>
 </section>
 <section id="immersion" class="slide level1 columns">
@@ -187,7 +191,7 @@
 <h2 class="top" id="section-4"></h2>
 <ul>
 <li class="fragment">A feeling of being <strong>immersed</strong> and <strong>present</strong> in a virtual environment</li>
-<li class="fragment">Varying degrees and aspects of immersion (spatial immersion, 3D/stereoscopy, head tracking, surround sound, …)</li>
+<li class="fragment">Varying degrees and aspects of immersion (spatial immersion, 3D, head tracking …)</li>
 <li class="fragment">Examples: <em>CAVE</em>s, Head-Mounted Displays, Domes (e.g. <em>ARENA2</em>)</li>
 </ul>
 </div>
@@ -198,16 +202,28 @@
 <div class="single-column-row">
 <div class="box columns bottom fragment" data-align="center" style="display: inline-flex;  justify-content: space-evenly;">
 <h2 class="bottom" data-align="center" style="display: inline-flex;  justify-content: space-evenly;" id="section-5"></h2>
-<p><figure class="decker" alt="CAVE_Crayoland.jpg" style="width:30%;"><img class="decker" data-src="assets/img/CAVE_Crayoland.jpg"><figcaption class="decker">The CAVE - Audio Visual Experience Automatic Virtual Environment. <span class="citation" data-cites="cruzneira1992cave">(Cruz-Neira et al. 1992)</span></figcaption></figure> <figure class="decker" alt="Vive_pre.jpeg" style="width:30%;"><img class="decker" data-src="assets/img/Vive_pre.jpeg"><figcaption class="decker">HTC Vive Pre Head-Mounted Display with two wireless handheld controllers (bottom) and two “Lighthouse” tracking stations (cubes)</figcaption></figure></p>
+<p><figure class="decker" alt="CAVE_Crayoland.jpg"><img class="decker" data-src="assets/img/CAVE_Crayoland.jpg" style="height:20vh;"><figcaption class="decker">The CAVE - Audio Visual Experience Automatic Virtual Environment. <span class="citation" data-cites="cruzneira1992cave">(Cruz-Neira et al. 1992)</span></figcaption></figure> <figure class="decker" alt="Vive_pre.jpeg"><img class="decker" data-src="assets/img/Vive_pre.jpeg" style="height:20vh;"><figcaption class="decker">HTC Vive Pre Head-Mounted Display with two wireless handheld controllers (bottom) and two “Lighthouse” tracking stations (cubes)</figcaption></figure></p>
 </div>
 <div class="box columns fragment">
 <h2 id="visual-analytics-immersion-immersive-analytics">Visual Analytics + Immersion = Immersive Analytics</h2>
-<!-- # ARENA2 Visualization Lab {.columns .fragments style="text-align:center"} -->
 </div>
 </div>
+<aside class="notes">
+<h2></h2>
+<p>Then we have immersion which - as the name says - is about how immersed a person feels in a virtual environment. There are different ways to achieve immersion and different implementations.</p>
+<p>For example the original CAVE which is a square box with head tracking and 3D or a VR Headset such as the htc vive</p>
+<p>So overall we can now add the Immersion part to our Visual Analytics</p>
+</aside>
 </section>
 <section id="arena2" class="slide level1" data-background-image="assets/img/2019-10-16_Arena-0191-nikolas-linke_credit.jpg" style="color:white">
 <h1 data-background-image="assets/img/2019-10-16_Arena-0191-nikolas-linke_credit.jpg" style="color:white">ARENA2  </h1>
+<aside class="notes">
+<h2></h2>
+<p>At Geomar, we have the ARENA2</p>
+<p>which is a free hanging dome with a diameter of 6 meters</p>
+<p>and it’s using multi-projection technology for real-time interactive data visualization.</p>
+<p>The environment of the ARENA opens up another aspect which is <strong>collaboration</strong></p>
+</aside>
 </section>
 <section id="immersive-and-collaborative-visual-analytics" class="slide level1">
 <h1>Immersive and Collaborative Visual Analytics</h1>
@@ -225,26 +241,36 @@
 <hr>
 </div>
 <div class="box columns fragment">
-<h2 id="arena2-environment-for-collaborative-semi-immersive-analytics">= ARENA2: Environment for collaborative (semi-)immersive analytics</h2>
+<h2 id="arena2-environment-for-collaborative-immersive-analytics">= ARENA2: Environment for collaborative immersive analytics</h2>
 <!-- **Environment for co-located, synchronous collaboration in a spatially immersive setting.** -->
 </div>
+<aside class="notes">
+<h2></h2>
+<p>So now we have established what Immersive Analytics is</p>
+<p>but we can also add collaborative visual analytics to the equation</p>
+<p>which leaves us with the ARENA2 as an environment for collaborative immersive analytics</p>
+</aside>
 </section>
 <section id="development-for-immersive-analytics" class="slide level1" style="text-align:center">
 <h1 style="text-align:center">DEVELOPMENT FOR IMMERSIVE ANALYTICS<span class="math inline">\(^*\)</span></h1>
 <p><span style="position: absolute;  bottom: 10%;  left: 6%;  font-size: small;"> <span class="math inline">\(^*\)</span>at ARENA2 </span></p>
+<aside class="notes">
+<h2></h2>
+<p>and now we’re taking a look at how to develop applications for immersive analytics</p>
+</aside>
 </section>
 <section id="unreal-engine" class="slide level1 columns">
 <h1 class="columns">Unreal Engine</h1>
 <div class="multi-column-row multi-column-row-3">
 <div class="grow-1 column column-1">
 <div class="box columns left">
-<h2 class="left" id="section-6"></h2>
+<h2 class="left" id="section-10"></h2>
 <img class="decker" data-src="assets/img/UE_Logo_icon-only_black.svg" alt="UE_Logo_icon-only_black.svg" style="width:75%;">
 </div>
 </div>
 <div class="grow-1 column column-3">
 <div class="box columns right">
-<h2 class="right" id="section-7"></h2>
+<h2 class="right" id="section-11"></h2>
 <ul>
 <li>Originally a video game engine</li>
 <li>Developed by Epic Games</li>
@@ -261,8 +287,8 @@
 <h1>Virtual Production</h1>
 <figure class="decker" alt="virtual_prod.png"><img class="decker" data-src="assets/img/virtual_prod.png"><figcaption class="decker">Virtual production stage <strong>“The Volume”</strong> for The Mandalorian</figcaption></figure>
 </section>
-<section id="virtual-production-technology" class="slide level1">
-<h1>Virtual Production Technology</h1>
+<section id="unreal-engine-on-a-cluster" class="slide level1">
+<h1>Unreal Engine on a Cluster</h1>
 <div class="column" style="width:40%;">
 <img class="decker" data-src="assets/img/ndisplay-setup.jpg" alt="ndisplay-setup.jpg">
 </div>
@@ -279,12 +305,16 @@ nDisplay Plugin
 </section>
 <section id="doing-actual-science-with-it" class="slide level1">
 <h1>DOING ACTUAL SCIENCE WITH IT</h1>
+<aside class="notes">
+<h2></h2>
+<p>So that’s all very nice and interesting but we’re here for actual science …</p>
 <!-- # ![](../assets/img/scientific_workflow.jpg) -->
+</aside>
 </section>
 <section id="fieldwork-in-geology" class="slide level1">
 <h1>Fieldwork in Geology</h1>
 <div class="box columns" style="display:flex; justify-content:space-between">
-<h2 style="display:flex; justify-content:space-between" id="section-8"></h2>
+<h2 style="display:flex; justify-content:space-between" id="section-13"></h2>
 <p><figure class="decker" alt="fieldwork.jpg" style="width:33%;"><img class="decker" data-src="assets/img/fieldwork.jpg"><figcaption class="decker">D. Garbe-Schönberg</figcaption></figure> <figure class="decker" alt="geocompass.jpg" style="width:33%;"><img class="decker" data-src="../assets/img/geocompass.jpg"><figcaption class="decker">Wikimedia: Setup of a modern geological compass after Prof. Clar (Freiberger) (<a href="https://en.wikipedia.org/wiki/Geological_compass">https://en.wikipedia.org/wiki/Geological_compass</a>)</figcaption></figure> <figure class="decker" alt="fieldnotebook.jpg" style="width:33%;"><img class="decker" data-src="../assets/img/fieldnotebook.jpg"><figcaption class="decker">UCL Earth Sciences: “An Idiot’s Guide to Fieldwork and Notebooks” by David Dobson (<a href="https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching">https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching.html</a>)</figcaption></figure></p>
 </div>
 <div class="box columns fragment">
@@ -293,6 +323,13 @@ nDisplay Plugin
 <div class="box columns fragment">
 <h2 id="virtual-fieldwork-in-immersive-environments">🡆 Virtual fieldwork in immersive environments</h2>
 </div>
+<aside class="notes">
+<h2></h2>
+<p>… which if we take geology as an example can at times look like this.</p>
+<p>You go to an outcrop, do actual measurements using actual physical tools and write down your findings in a notebook</p>
+<p>So the question is how to do this under water?</p>
+<p>And the answer is by doing virtual fieldwork in an immersive environment</p>
+</aside>
 </section>
 <section id="georeferencing-data" class="slide level1">
 <h1>Georeferencing Data</h1>
@@ -300,6 +337,12 @@ nDisplay Plugin
 <!-- - Latitude = Elevation in degrees to the Equator
 - Longitude = Azimuth in degrees to the Prime Meridian (Greenwich)
 - Altitude = Height in meters to the reference ellipsoid (i.e. an approximate representation of the Earth).  -->
+<aside class="notes">
+<h2></h2>
+<p>And to be able to use geospatial data in Unreal and get results that are based in reality</p>
+<p>we need to georeference the data</p>
+<p>and there is a platform that helps with this which is Cesium</p>
+</aside>
 </section>
 <section id="cesium" class="slide level1">
 <h1>Cesium</h1>
@@ -308,17 +351,26 @@ nDisplay Plugin
 <li>Platform for creating 3D geospatial applications and processing georeferenced 3D data</li>
 </ul>
 <div class="box columns" style="text-align:center">
-<h2 style="text-align:center" id="section-9"></h2>
+<h2 style="text-align:center" id="section-16"></h2>
 <img class="decker" data-src="assets/img/cesium.png" alt="cesium.png" style="width:75%;">
 </div>
+<aside class="notes">
+<h2></h2>
+<p>Cesium has a platform to host 3D geospatial data</p>
+<p>But it also offers several plugins and APIs for building applications that are using cesium data</p>
+</aside>
 </section>
 <section id="cesium-for-unreal" class="slide level1">
 <h1>Cesium for Unreal</h1>
 <!-- ## {style="display:ruby; justify-content:space-between"} -->
 <div class="box columns" style="text-align:center">
-<h2 style="text-align:center" id="section-10"></h2>
+<h2 style="text-align:center" id="section-18"></h2>
 <p><img class="decker" data-src="assets/img/cesium-unreal.png" alt="cesium-unreal.png" style="width:70%;"> <figure class="decker" alt="HighresScreenshot00006.png" style="width:70%;"><img class="decker" data-src="assets/img/HighresScreenshot00006.png"><figcaption class="decker">Black Smoker Photogrammetry Model in Unreal Engine</figcaption></figure></p>
 </div>
+<aside class="notes">
+<h2></h2>
+<p>One of those is Cesium for unreal which for example enables you display and query photogrammetry data in unreal engine</p>
+</aside>
 </section>
 <section id="this-means" class="slide level1">
 <h1>This means:</h1>
@@ -336,29 +388,29 @@ nDisplay Plugin
 <p><span style="position: absolute;  bottom: 10%;  left: 6%;  font-size: small;"> <span class="math inline">\(^*\)</span>for people playing buzzword bingo right now </span></p>
 </div>
 </section>
-<section id="reproducibility-and-provenance" class="slide level1">
-<h1>REPRODUCIBILITY AND PROVENANCE</h1>
+<section id="making-immersive-analytics-reproducible" class="slide level1">
+<h1>MAKING IMMERSIVE ANALYTICS REPRODUCIBLE</h1>
 </section>
 <section id="the-proposed-immersive-analytics-workflow" class="slide level1 columns">
 <h1 class="columns">The proposed Immersive Analytics Workflow</h1>
 <div class="multi-column-row multi-column-row-3">
 <div class="grow-1 column column-1">
 <div class="box columns left fragment">
-<h2 class="left" id="section-11"></h2>
+<h2 class="left" id="section-20"></h2>
 <p><br> <br></p>
 <figure class="decker" alt="Picture1.jpg"><img class="decker" data-src="assets/img/Picture1.jpg"><figcaption class="decker">Research question</figcaption></figure>
 </div>
 </div>
 <div class="grow-1 column column-2">
 <div class="box columns center fragment">
-<h2 class="center" id="section-12"></h2>
+<h2 class="center" id="section-21"></h2>
 <p><br> <br></p>
 <figure class="decker" alt="Picture2.jpg"><img class="decker" data-src="assets/img/Picture2.jpg"><figcaption class="decker">Sensemaking through immersive analytics</figcaption></figure>
 </div>
 </div>
 <div class="grow-1 column column-3">
 <div class="box columns right fragment">
-<h2 class="right" id="section-13"></h2>
+<h2 class="right" id="section-22"></h2>
 <figure class="decker" alt="Picture3.jpg"><img class="decker" data-src="assets/img/Picture3.jpg"><figcaption class="decker">Publication of insights and visualization</figcaption></figure>
 <!-- ## There is always space for more Visualization Provenance in visual analytics workflows! {.fragment .bottom style="font-size:large"} -->
 </div>
@@ -373,7 +425,7 @@ nDisplay Plugin
 <section id="provenance" class="slide level1">
 <h1>Provenance</h1>
 <div class="box columns example fragment">
-<h2 class="example" id="section-14"></h2>
+<h2 class="example" id="section-23"></h2>
 <p>“<em>[…] is information about entities, activities, and people involved in producing a piece of data or thing, which can be used to form <strong>assessments about its quality, reliability or trustworthiness</strong></em>”</p>
 <p>- World Wide Web Consortium <span class="citation" data-cites="2013provoverview">(Groth and Moreau 2013)</span></p>
 </div>
@@ -381,7 +433,7 @@ nDisplay Plugin
 <section id="the-value-of-visualization" class="slide level1">
 <h1>The Value of Visualization</h1>
 <div class="box columns fragment">
-<h2 id="section-15"></h2>
+<h2 id="section-24"></h2>
 <p>The value is a trade-off between the costs (e.g. the effort to understand a visualization) and the gained knowledge.</p>
 <p><em>“Just claiming that a visualization gives insight is not enough, if we want to offer additional value.”</em> <span class="citation" data-cites="vanwijk2005value">(vanWijk 2005)</span></p>
 <!-- ## {.example .fragment} -->
@@ -399,10 +451,10 @@ nDisplay Plugin
 <h1>The Digital Lab Book</h1>
 <img class="decker" data-src="assets/img/digital-lab-book_notext.png" alt="digital-lab-book_notext.png">
 </section>
-<section id="section-16" class="slide level1">
+<section id="section-25" class="slide level1">
 <h1></h1>
 <div class="box columns" style="text-align:center">
-<h2 style="text-align:center" id="section-17"></h2>
+<h2 style="text-align:center" id="section-26"></h2>
 <figure class="decker" alt="ModifiedReproducibleJourney.jpg" style="width:65%;"><img class="decker" data-src="assets/img/ModifiedReproducibleJourney.jpg"><figcaption class="decker">This modified illustration was originally created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. <a href="https://doi.org/10.5281/zenodo.3332807">DOI: 10.5281/zenodo.3332807</a></figcaption></figure>
 </div>
 </section>

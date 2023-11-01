@@ -7,4 +7,5 @@ template:
   title-page:
     affiliation-logo: "assets/logos/footer4.png"    
     # teaser-img: "assets/img/mardata_header_ocean_01_1250x700_higher_gamma.jpg"
-    teaser-img: "assets/img/PXL_20230911_144144845.PANO.jpg"
+    # teaser-img: "assets/img/PXL_20230911_144144845.PANO.jpg"
+    teaser-img: "assets/img/title-teaser.jpg"

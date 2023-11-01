@@ -4,7 +4,7 @@ chalkboard: 'template-deck.json'
 controls: true
 csl: 'chicago-author-date.csl'
 menu: true
-title: Developing Immersive Applications for the Reproducible Analysis of Geospatial Data
+title: Developing Immersive Applications for the Reproducible Analysis of 3D Geospatial Data
 subtitle: MarDATA Retreat 2023
 author: Armin Bernstetter (he/him)
 slideNumber: true
@@ -22,7 +22,6 @@ date: 06.11.2023
 - Supervision: 
   - Prof. Dr. Isabella Peters (ZBW/CAU)
   - Dr. Tom Kwasnitschka (GEOMAR)
-
 
 ##  {.right}
 
@@ -57,28 +56,50 @@ Gaining knowledge and insight through data exploration
 
 # {.notes}
 
-Overall, we are located in the area of Human-Computer Interaction or Human-Data Interaction. I will not go fully into detail here because the terms themselves are self-explanatory enough for this talk.
+For our interpretation of visual analytics we have three main columns.
 
-In contrast to e.g. automated data analytics by machine learning or other computer-based techniques, visual analytics is performed by humans through interaction with visualized data.
+1. Visualizing data for humans
+2. Enabling humans to explore those visualizations interactively
+3. Using this interaction in a process called sensemaking which results in knowledge and insights
+
 
 # Immersion {.columns}
 
 ## {.top}
 
 >- A feeling of being **immersed** and **present** in a virtual environment
-- Varying degrees and aspects of immersion (spatial immersion, 3D/stereoscopy, head tracking, surround sound, ...)
+- Varying degrees and aspects of immersion (spatial immersion, 3D, head tracking ...)
 - Examples: *CAVE*s, Head-Mounted Displays, Domes (e.g. *ARENA2*)
 
 ## {.bottom align=center .fragment style="display: inline-flex;  justify-content: space-evenly;"}
 
-![The CAVE - Audio Visual Experience Automatic Virtual Environment. [@cruzneira1992cave]](assets/img/CAVE_Crayoland.jpg){width=30%}
-![HTC Vive Pre Head-Mounted Display with two wireless handheld controllers (bottom) and two "Lighthouse" tracking stations (cubes)](assets/img/Vive_pre.jpeg){width=30%}
+![The CAVE - Audio Visual Experience Automatic Virtual Environment. [@cruzneira1992cave]](assets/img/CAVE_Crayoland.jpg){height=20vh}
+![HTC Vive Pre Head-Mounted Display with two wireless handheld controllers (bottom) and two "Lighthouse" tracking stations (cubes)](assets/img/Vive_pre.jpeg){height=20vh}
 
 ## Visual Analytics + Immersion = Immersive Analytics {.fragment}
 
-<!-- # ARENA2 Visualization Lab {.columns .fragments style="text-align:center"} -->
+# {.notes}
+
+Then we have immersion which - as the name says - is about how immersed a person feels in a virtual environment.
+There are different ways to achieve immersion and different implementations.
+
+For example the original CAVE which is a square box with head tracking and 3D or a VR Headset such as the htc vive
+
+So overall we can now add the Immersion part to our Visual Analytics
+
+
+
 # ARENA2 ![](assets/img/2019-10-16_Arena-0191-nikolas-linke_credit.jpg) {style="color:white"}
 
+# {.notes}
+
+At Geomar, we have the ARENA2
+
+which is a free hanging dome with a diameter of 6 meters 
+
+and it's using multi-projection technology for real-time interactive data visualization.
+
+The environment of the ARENA opens up another aspect which is **collaboration**
 
 # Immersive and Collaborative Visual Analytics
 
@@ -99,10 +120,17 @@ Can be co-located or remote, synchronous or asynchronous
 
 <hr>
 
-## = ARENA2: Environment for collaborative (semi-)immersive analytics {.fragment}
+## = ARENA2: Environment for collaborative immersive analytics {.fragment}
 
 <!-- **Environment for co-located, synchronous collaboration in a spatially immersive setting.** -->
 
+# {.notes}
+
+So now we have established what Immersive Analytics is
+
+but we can also add collaborative visual analytics to the equation
+
+which leaves us with the ARENA2 as an environment for collaborative immersive analytics
 
 
 # DEVELOPMENT FOR IMMERSIVE ANALYTICS$^*$ {style="text-align:center"}
@@ -113,6 +141,9 @@ $^*$at ARENA2
 </span>
 
 
+# {.notes}
+
+and now we're taking a look at how to develop applications for immersive analytics
 
 # Unreal Engine {.columns}
 
@@ -134,7 +165,7 @@ $^*$at ARENA2
 ![Virtual production stage **"The Volume"** for The Mandalorian](assets/img/virtual_prod.png)
 
 
-# Virtual Production Technology
+# Unreal Engine on a Cluster
 
 ::: {.column width=40%}
 
@@ -155,6 +186,10 @@ $^*$at ARENA2
 
 # DOING ACTUAL SCIENCE WITH IT
 
+# {.notes}
+
+So that's all very nice and interesting but we're here for actual science ...
+
 <!-- # ![](../assets/img/scientific_workflow.jpg) -->
 
 # Fieldwork in Geology
@@ -168,6 +203,17 @@ $^*$at ARENA2
 ## How to do this under water? { .fragment}
 ## 🡆 Virtual fieldwork in immersive environments {.fragment}
 
+
+# {.notes}
+
+... which if we take geology as an example can at times look like this. 
+
+You go to an outcrop, do actual measurements using actual physical tools and write down your findings in a notebook
+
+So the question is how to do this under water?
+
+And the answer is by doing virtual fieldwork in an immersive environment
+
 # Georeferencing Data
 
 Geospatial data from the real world needs to be in a **Coordinate Reference System** to express the location and be able to make queries that give realistic results (e.g. real distance between two points in a 3D model)
@@ -175,6 +221,15 @@ Geospatial data from the real world needs to be in a **Coordinate Reference Syst
 <!-- - Latitude = Elevation in degrees to the Equator
 - Longitude = Azimuth in degrees to the Prime Meridian (Greenwich)
 - Altitude = Height in meters to the reference ellipsoid (i.e. an approximate representation of the Earth).  -->
+
+# {.notes}
+
+And to be able to use geospatial data in Unreal and get results that are based in reality
+
+we need to georeference the data
+
+and there is a platform that helps with this which is Cesium
+
 
 # Cesium
 
@@ -184,6 +239,14 @@ Geospatial data from the real world needs to be in a **Coordinate Reference Syst
 ## {style="text-align:center"}
 ![](assets/img/cesium.png){width=75%}
 
+
+# {.notes}
+
+Cesium has a platform to host 3D geospatial data
+
+But it also offers several plugins and APIs for building applications that are using cesium data
+
+
 # Cesium for Unreal
 
 <!-- ## {style="display:ruby; justify-content:space-between"} -->
@@ -192,6 +255,10 @@ Geospatial data from the real world needs to be in a **Coordinate Reference Syst
 
 ![](assets/img/cesium-unreal.png){width=70%}
 ![Black Smoker Photogrammetry Model in Unreal Engine](assets/img/HighresScreenshot00006.png){width=70%}
+
+# {.notes}
+
+One of those is Cesium for unreal which for example enables you display and query photogrammetry data in unreal engine
 
 # This means:
 
@@ -205,7 +272,7 @@ $^*$for people playing buzzword bingo right now
 </span>
 
 
-# REPRODUCIBILITY AND PROVENANCE
+# MAKING IMMERSIVE ANALYTICS REPRODUCIBLE
 
 # The proposed Immersive Analytics Workflow {.columns}
 
