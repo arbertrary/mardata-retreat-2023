@@ -69,12 +69,12 @@ For our interpretation of visual analytics we have three main columns.
 
 >- A feeling of being **immersed** and **present** in a virtual environment
 - Varying degrees and aspects of immersion (spatial immersion, 3D, head tracking ...)
-- Examples: *CAVE*s, Head-Mounted Displays, Domes (e.g. *ARENA2*)
+- Examples: *CAVE*s, VR headsets, Domes
 
 ## {.bottom align=center .fragment style="display: inline-flex;  justify-content: space-evenly;"}
 
-![The CAVE - Audio Visual Experience Automatic Virtual Environment. [@cruzneira1992cave]](assets/img/CAVE_Crayoland.jpg){height=20vh}
-![HTC Vive Pre Head-Mounted Display with two wireless handheld controllers (bottom) and two "Lighthouse" tracking stations (cubes)](assets/img/Vive_pre.jpeg){height=20vh}
+![The CAVE - Audio Visual Experience Automatic Virtual Environment. [@cruzneira1992cave]](assets/img/CAVE_Crayoland.jpg){height=25vh}
+![HTC Vive Pre Head-Mounted Display with two wireless handheld controllers (bottom) and two "Lighthouse" tracking stations (cubes)](assets/img/Vive_pre.jpeg){height=25vh}
 
 ## Visual Analytics + Immersion = Immersive Analytics {.fragment}
 
@@ -101,7 +101,7 @@ and it's using multi-projection technology for real-time interactive data visual
 
 The environment of the ARENA opens up another aspect which is **collaboration**
 
-# Immersive and Collaborative Visual Analytics
+# Collaborative Work
 
 ## Immersive Analytics {.fragment}
 
@@ -136,7 +136,7 @@ which leaves us with the ARENA2 as an environment for collaborative immersive an
 # DEVELOPMENT FOR IMMERSIVE ANALYTICS$^*$ {style="text-align:center"}
 
 
-<span style="position: absolute;  bottom: 10%;  left: 6%;  font-size: small;">
+<span style="position: absolute;  bottom: 10%;  left: 6%;  font-size: 15pt;">
 $^*$at ARENA2
 </span>
 
@@ -153,9 +153,9 @@ and now we're taking a look at how to develop applications for immersive analyti
 
 ## {.right}
 
-- Originally a video game engine
+- Originally video game engine
 - Developed by Epic Games
-- Today branded as *"powerful real-time 3D creation tool"*
+- Branded as *"powerful real-time 3D creation tool"*
 - Free to use, source-available software
 - Ever-expanding ecosystem
 - Used in game development, architecture, simulation, research, film making ...
@@ -165,7 +165,7 @@ and now we're taking a look at how to develop applications for immersive analyti
 ![Virtual production stage **"The Volume"** for The Mandalorian](assets/img/virtual_prod.png)
 
 
-# Unreal Engine on a Cluster
+# Unreal Engine @ ARENA2
 
 ::: {.column width=40%}
 
@@ -200,7 +200,7 @@ So that's all very nice and interesting but we're here for actual science ...
 ![UCL Earth Sciences: "An Idiot's Guide to Fieldwork and Notebooks" by David Dobson ([https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching.html](https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching))](../assets/img/fieldnotebook.jpg){width=33%}
 
 
-## How to do this under water? { .fragment}
+## How to do this on the seafloor? { .fragment}
 ## 🡆 Virtual fieldwork in immersive environments {.fragment}
 
 
@@ -237,7 +237,7 @@ and there is a platform that helps with this which is Cesium
 - Platform for creating 3D geospatial applications and processing georeferenced 3D data
 
 ## {style="text-align:center"}
-![](assets/img/cesium.png){width=75%}
+![](assets/img/cesium.png){width=100%}
 
 
 # {.notes}
@@ -253,8 +253,8 @@ But it also offers several plugins and APIs for building applications that are u
 
 ## {style="text-align:center"}
 
-![](assets/img/cesium-unreal.png){width=70%}
-![Black Smoker Photogrammetry Model in Unreal Engine](assets/img/HighresScreenshot00006.png){width=70%}
+![](assets/img/cesium-unreal.png){width=75%}
+![Black Smoker Photogrammetry Model in Unreal Engine](assets/img/HighresScreenshot00006.png){width=75%}
 
 # {.notes}
 
@@ -267,7 +267,7 @@ One of those is Cesium for unreal which for example enables you display and quer
 ## 🡆 Immersive Analytics {.fragment}
 ## 🡆 Digital Twin$^*$ {.fragment}
 
-<span style="position: absolute;  bottom: 10%;  left: 6%;  font-size: small;">
+<span style="position: absolute;  bottom: 10%;  left: 6%;  font-size: 15pt;">
 $^*$for people playing buzzword bingo right now
 </span>
 
@@ -314,7 +314,7 @@ $^*$for people playing buzzword bingo right now
 
 ## {.fragment}
 
-The value is a trade-off between the costs (e.g. the effort to understand a visualization) and the gained knowledge.
+<!-- The value is a trade-off between the costs (e.g. the effort to understand a visualization) and the gained knowledge. -->
 
 
 *"Just claiming that a visualization gives insight is not enough, if we want to offer additional value."* [@vanwijk2005value]
@@ -322,6 +322,9 @@ The value is a trade-off between the costs (e.g. the effort to understand a visu
 <!-- ## {.example .fragment} -->
 
 ## Provenance and reproducibility make it possible to assess and increase the scientific value of a visualization {.fragment}
+
+
+# Provenance: How-To?
 
 >- Capture Users reasoning processes by capturing internal (i.e. in-app interaction) and external (e.g. think-aloud, manual notes) information
 - Capture visualization state history including undo-redo and branching actions
@@ -336,6 +339,6 @@ The value is a trade-off between the costs (e.g. the effort to understand a visu
 
 ## {style="text-align:center"}
 
-![This modified illustration was originally created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. [DOI: 10.5281/zenodo.3332807](https://doi.org/10.5281/zenodo.3332807)](assets/img/ModifiedReproducibleJourney.jpg){width=65%}
+![This modified illustration was originally created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. [DOI: 10.5281/zenodo.3332807](https://doi.org/10.5281/zenodo.3332807)](assets/img/ModifiedReproducibleJourney.jpg){width=90%}
 
 # References
