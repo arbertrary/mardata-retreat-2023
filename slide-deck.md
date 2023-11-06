@@ -196,8 +196,8 @@ So that's all very nice and interesting but we're here for actual science ...
 
 ## {style="display:flex; justify-content:space-between"}
 ![D. Garbe-Schönberg](assets/img/fieldwork.jpg){width=33%}
-![Wikimedia: Setup of a modern geological compass after Prof. Clar (Freiberger) ([https://en.wikipedia.org/wiki/Geological_compass](https://en.wikipedia.org/wiki/Geological_compass))](../assets/img/geocompass.jpg){width=33%}
-![UCL Earth Sciences: "An Idiot's Guide to Fieldwork and Notebooks" by David Dobson ([https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching.html](https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching))](../assets/img/fieldnotebook.jpg){width=33%}
+![Wikimedia: Setup of a modern geological compass after Prof. Clar (Freiberger) ([https://en.wikipedia.org/wiki/Geological_compass](https://en.wikipedia.org/wiki/Geological_compass))](assets/img/geocompass.jpg){width=33%}
+![UCL Earth Sciences: "An Idiot's Guide to Fieldwork and Notebooks" by David Dobson ([https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching.html](https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching))](assets/img/fieldnotebook.jpg){width=33%}
 
 
 ## How to do this on the seafloor? { .fragment}
