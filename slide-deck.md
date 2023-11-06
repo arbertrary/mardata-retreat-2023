@@ -32,6 +32,28 @@ date: 06.11.2023
 
 ![Slides for this talk](assets/img/qr-code.png){width=30%}
 
+# Motivation: Fieldwork
+
+## {style="display:flex; justify-content:space-between"}
+![D. Garbe-Schönberg](assets/img/fieldwork.jpg){width=33%}
+![Wikimedia: Setup of a modern geological compass after Prof. Clar (Freiberger) ([https://en.wikipedia.org/wiki/Geological_compass](https://en.wikipedia.org/wiki/Geological_compass))](assets/img/geocompass.jpg){width=33%}
+![UCL Earth Sciences: "An Idiot's Guide to Fieldwork and Notebooks" by David Dobson ([https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching.html](https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching))](assets/img/fieldnotebook.jpg){width=33%}
+
+
+## How to do this on the seafloor? { .fragment}
+## 🡆 Virtual fieldwork in immersive environments {.fragment}
+
+
+# {.notes}
+
+... which if we take geology as an example can at times look like this. 
+
+You go to an outcrop, do actual measurements using actual physical tools and write down your findings in a notebook
+
+So the question is how to do this under water?
+
+And the answer is by doing virtual fieldwork in an immersive environment
+
 
 # IMMERSIVE ANALYTICS {style="text-align:center"}
 
@@ -184,35 +206,13 @@ and now we're taking a look at how to develop applications for immersive analyti
 :::
 
 
-# DOING ACTUAL SCIENCE WITH IT
+<!-- # DOING ACTUAL SCIENCE WITH IT
 
 # {.notes}
 
-So that's all very nice and interesting but we're here for actual science ...
+So that's all very nice and interesting but we're here for actual science ... -->
 
 <!-- # ![](../assets/img/scientific_workflow.jpg) -->
-
-# Fieldwork in Geology
-
-## {style="display:flex; justify-content:space-between"}
-![D. Garbe-Schönberg](assets/img/fieldwork.jpg){width=33%}
-![Wikimedia: Setup of a modern geological compass after Prof. Clar (Freiberger) ([https://en.wikipedia.org/wiki/Geological_compass](https://en.wikipedia.org/wiki/Geological_compass))](assets/img/geocompass.jpg){width=33%}
-![UCL Earth Sciences: "An Idiot's Guide to Fieldwork and Notebooks" by David Dobson ([https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching.html](https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching))](assets/img/fieldnotebook.jpg){width=33%}
-
-
-## How to do this on the seafloor? { .fragment}
-## 🡆 Virtual fieldwork in immersive environments {.fragment}
-
-
-# {.notes}
-
-... which if we take geology as an example can at times look like this. 
-
-You go to an outcrop, do actual measurements using actual physical tools and write down your findings in a notebook
-
-So the question is how to do this under water?
-
-And the answer is by doing virtual fieldwork in an immersive environment
 
 # Georeferencing Data
 
@@ -327,7 +327,7 @@ $^*$for people playing buzzword bingo right now
 # Provenance: How-To?
 
 >- Capture Users reasoning processes by capturing internal (i.e. in-app interaction) and external (e.g. think-aloud, manual notes) information
-- Capture visualization state history including undo-redo and branching actions
+- Capture visualization state history and enable undo-redo and branching actions
 - Organize provenance and make it persistent and publishable in a "Digital Lab Book" [@bernstetter2023practical]
 
 # The Digital Lab Book

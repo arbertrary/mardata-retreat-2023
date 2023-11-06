@@ -20,6 +20,22 @@
 ,Header 1 ("section-2",[],[("style","text-align:center")]) []
 ,RawBlock (Format "html") "<figure class=\"decker\" alt=\"qr-code.png\" style=\"width:30%;\"><img class=\"decker\" data-src=\"assets/img/qr-code.png\"><figcaption class=\"decker\">Slides for this talk</figcaption></figure>"
 ,HorizontalRule
+,Header 1 ("motivation-fieldwork",[],[]) [Str "Motivation:",Space,Str "Fieldwork"]
+,Div ("",["box","columns"],[("style","display:flex; justify-content:space-between")])
+ [Header 2 ("section-3",[],[("style","display:flex; justify-content:space-between")]) []
+ ,Para [RawInline (Format "html") "<figure class=\"decker\" alt=\"fieldwork.jpg\" style=\"width:33%;\"><img class=\"decker\" data-src=\"assets/img/fieldwork.jpg\"><figcaption class=\"decker\">D. Garbe-Sch\246nberg</figcaption></figure>",SoftBreak,RawInline (Format "html") "<figure class=\"decker\" alt=\"geocompass.jpg\" style=\"width:33%;\"><img class=\"decker\" data-src=\"assets/img/geocompass.jpg\"><figcaption class=\"decker\">Wikimedia: Setup of a modern geological compass after Prof.\160Clar (Freiberger) (<a href=\"https://en.wikipedia.org/wiki/Geological_compass\">https://en.wikipedia.org/wiki/Geological_compass</a>)</figcaption></figure>",SoftBreak,RawInline (Format "html") "<figure class=\"decker\" alt=\"fieldnotebook.jpg\" style=\"width:33%;\"><img class=\"decker\" data-src=\"assets/img/fieldnotebook.jpg\"><figcaption class=\"decker\">UCL Earth Sciences: \8220An Idiot\8217s Guide to Fieldwork and Notebooks\8221 by David Dobson (<a href=\"https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching\">https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching.html</a>)</figcaption></figure>"]]
+,Div ("",["box","columns","fragment"],[])
+ [Header 2 ("how-to-do-this-on-the-seafloor",[],[]) [Str "How",Space,Str "to",Space,Str "do",Space,Str "this",Space,Str "on",Space,Str "the",Space,Str "seafloor?"]]
+,Div ("",["box","columns","fragment"],[])
+ [Header 2 ("virtual-fieldwork-in-immersive-environments",[],[]) [Str "\129094",Space,Str "Virtual",Space,Str "fieldwork",Space,Str "in",Space,Str "immersive",Space,Str "environments"]]
+,RawBlock (Format "html") "<aside class=\"notes\">"
+,Header 2 ("",[],[]) []
+,Para [Str "\8230",Space,Str "which",Space,Str "if",Space,Str "we",Space,Str "take",Space,Str "geology",Space,Str "as",Space,Str "an",Space,Str "example",Space,Str "can",Space,Str "at",Space,Str "times",Space,Str "look",Space,Str "like",Space,Str "this."]
+,Para [Str "You",Space,Str "go",Space,Str "to",Space,Str "an",Space,Str "outcrop,",Space,Str "do",Space,Str "actual",Space,Str "measurements",Space,Str "using",Space,Str "actual",Space,Str "physical",Space,Str "tools",Space,Str "and",Space,Str "write",Space,Str "down",Space,Str "your",Space,Str "findings",Space,Str "in",Space,Str "a",Space,Str "notebook"]
+,Para [Str "So",Space,Str "the",Space,Str "question",Space,Str "is",Space,Str "how",Space,Str "to",Space,Str "do",Space,Str "this",Space,Str "under",Space,Str "water?"]
+,Para [Str "And",Space,Str "the",Space,Str "answer",Space,Str "is",Space,Str "by",Space,Str "doing",Space,Str "virtual",Space,Str "fieldwork",Space,Str "in",Space,Str "an",Space,Str "immersive",Space,Str "environment"]
+,RawBlock (Format "html") "</aside>"
+,HorizontalRule
 ,Header 1 ("immersive-analytics",[],[("style","text-align:center")]) [Str "IMMERSIVE",Space,Str "ANALYTICS"]
 ,HorizontalRule
 ,Header 1 ("visual-analytics",[],[]) [Str "Visual",Space,Str "Analytics"]
@@ -49,7 +65,7 @@
 ,Header 1 ("immersion",["columns"],[]) [Str "Immersion"]
 ,Div ("",["single-column-row"],[])
  [Div ("",["box","columns","top"],[])
-  [Header 2 ("section-4",["top"],[]) []
+  [Header 2 ("section-6",["top"],[]) []
   ,BlockQuote
    [BulletList
     [[Plain [Str "A",Space,Str "feeling",Space,Str "of",Space,Str "being",Space,Strong [Str "immersed"],Space,Str "and",Space,Strong [Str "present"],Space,Str "in",Space,Str "a",Space,Str "virtual",Space,Str "environment"]]
@@ -59,7 +75,7 @@
  []
 ,Div ("",["single-column-row"],[])
  [Div ("",["box","columns","bottom","fragment"],[("align","center"),("style","display: inline-flex;  justify-content: space-evenly;")])
-  [Header 2 ("section-5",["bottom"],[("align","center"),("style","display: inline-flex;  justify-content: space-evenly;")]) []
+  [Header 2 ("section-7",["bottom"],[("align","center"),("style","display: inline-flex;  justify-content: space-evenly;")]) []
   ,Para [RawInline (Format "html") "<figure class=\"decker\" alt=\"CAVE_Crayoland.jpg\"><img class=\"decker\" data-src=\"assets/img/CAVE_Crayoland.jpg\" style=\"height:25vh;\"><figcaption class=\"decker\">The CAVE - Audio Visual Experience Automatic Virtual Environment. <span class=\"citation\" data-cites=\"cruzneira1992cave\">(Cruz-Neira et al. 1992)</span></figcaption></figure>",SoftBreak,RawInline (Format "html") "<figure class=\"decker\" alt=\"Vive_pre.jpeg\"><img class=\"decker\" data-src=\"assets/img/Vive_pre.jpeg\" style=\"height:25vh;\"><figcaption class=\"decker\">HTC Vive Pre Head-Mounted Display with two wireless handheld controllers (bottom) and two \8220Lighthouse\8221 tracking stations (cubes)</figcaption></figure>"]]
  ,Div ("",["box","columns","fragment"],[])
   [Header 2 ("visual-analytics-immersion-immersive-analytics",[],[]) [Str "Visual",Space,Str "Analytics",Space,Str "+",Space,Str "Immersion",Space,Str "=",Space,Str "Immersive",Space,Str "Analytics"]]]
@@ -112,11 +128,11 @@
 ,Div ("",["multi-column-row","multi-column-row-3"],[])
  [Div ("",["grow-1","column","column-1"],[])
   [Div ("",["box","columns","left"],[])
-   [Header 2 ("section-10",["left"],[]) []
+   [Header 2 ("section-12",["left"],[]) []
    ,RawBlock (Format "html") "<img class=\"decker\" data-src=\"assets/img/UE_Logo_icon-only_black.svg\" alt=\"UE_Logo_icon-only_black.svg\" style=\"width:75%;\">"]]
  ,Div ("",["grow-1","column","column-3"],[])
   [Div ("",["box","columns","right"],[])
-   [Header 2 ("section-11",["right"],[]) []
+   [Header 2 ("section-13",["right"],[]) []
    ,BulletList
     [[Plain [Str "Originally",Space,Str "video",Space,Str "game",Space,Str "engine"]]
     ,[Plain [Str "Developed",Space,Str "by",Space,Str "Epic",Space,Str "Games"]]
@@ -139,29 +155,8 @@
   [[Plain [Str "Rendering",Space,Str "Unreal",Space,Str "Engine",Space,Str "content",Space,Str "in",Space,Str "real-time",Space,Str "to",Space,Str "a",Space,Str "cluster",Space,Str "of",Space,Str "nodes",Space,Str "and",Space,Str "multiple",Space,Str "displays"]]
   ,[Plain [Str "Tiled",Space,Str "walls,",Space,Str "curved",Space,Str "screens,",Space,Str "CAVEs,",Space,Str "Domes",Space,Str "(e.g.\160ARENA2)"]]
   ,[Plain [Str "Use",Space,Str "motion",Space,Str "tracking",Space,Str "and",Space,Str "input",Space,Str "devices",Space,Str "(e.g.\160game",Space,Str "controllers)",Space,Str "to",Space,Str "manipulate",Space,Str "camera",Space,Str "perspective",Space,Str "and",Space,Str "movement",Space,Str "in",Space,Str "scene"]]]]
-,HorizontalRule
-,Header 1 ("doing-actual-science-with-it",[],[]) [Str "DOING",Space,Str "ACTUAL",Space,Str "SCIENCE",Space,Str "WITH",Space,Str "IT"]
-,RawBlock (Format "html") "<aside class=\"notes\">"
-,Header 2 ("",[],[]) []
-,Para [Str "So",Space,Str "that\8217s",Space,Str "all",Space,Str "very",Space,Str "nice",Space,Str "and",Space,Str "interesting",Space,Str "but",Space,Str "we\8217re",Space,Str "here",Space,Str "for",Space,Str "actual",Space,Str "science",Space,Str "\8230"]
+,RawBlock (Format "html") "<!-- # DOING ACTUAL SCIENCE WITH IT\n\n# {.notes}\n\nSo that's all very nice and interesting but we're here for actual science ... -->"
 ,RawBlock (Format "html") "<!-- # ![](../assets/img/scientific_workflow.jpg) -->"
-,RawBlock (Format "html") "</aside>"
-,HorizontalRule
-,Header 1 ("fieldwork-in-geology",[],[]) [Str "Fieldwork",Space,Str "in",Space,Str "Geology"]
-,Div ("",["box","columns"],[("style","display:flex; justify-content:space-between")])
- [Header 2 ("section-13",[],[("style","display:flex; justify-content:space-between")]) []
- ,Para [RawInline (Format "html") "<figure class=\"decker\" alt=\"fieldwork.jpg\" style=\"width:33%;\"><img class=\"decker\" data-src=\"assets/img/fieldwork.jpg\"><figcaption class=\"decker\">D. Garbe-Sch\246nberg</figcaption></figure>",SoftBreak,RawInline (Format "html") "<figure class=\"decker\" alt=\"geocompass.jpg\" style=\"width:33%;\"><img class=\"decker\" data-src=\"assets/img/geocompass.jpg\"><figcaption class=\"decker\">Wikimedia: Setup of a modern geological compass after Prof.\160Clar (Freiberger) (<a href=\"https://en.wikipedia.org/wiki/Geological_compass\">https://en.wikipedia.org/wiki/Geological_compass</a>)</figcaption></figure>",SoftBreak,RawInline (Format "html") "<figure class=\"decker\" alt=\"fieldnotebook.jpg\" style=\"width:33%;\"><img class=\"decker\" data-src=\"assets/img/fieldnotebook.jpg\"><figcaption class=\"decker\">UCL Earth Sciences: \8220An Idiot\8217s Guide to Fieldwork and Notebooks\8221 by David Dobson (<a href=\"https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching\">https://www.ucl.ac.uk/earth-sciences-virtualfieldtrip/fieldskills/fieldsketching.html</a>)</figcaption></figure>"]]
-,Div ("",["box","columns","fragment"],[])
- [Header 2 ("how-to-do-this-on-the-seafloor",[],[]) [Str "How",Space,Str "to",Space,Str "do",Space,Str "this",Space,Str "on",Space,Str "the",Space,Str "seafloor?"]]
-,Div ("",["box","columns","fragment"],[])
- [Header 2 ("virtual-fieldwork-in-immersive-environments",[],[]) [Str "\129094",Space,Str "Virtual",Space,Str "fieldwork",Space,Str "in",Space,Str "immersive",Space,Str "environments"]]
-,RawBlock (Format "html") "<aside class=\"notes\">"
-,Header 2 ("",[],[]) []
-,Para [Str "\8230",Space,Str "which",Space,Str "if",Space,Str "we",Space,Str "take",Space,Str "geology",Space,Str "as",Space,Str "an",Space,Str "example",Space,Str "can",Space,Str "at",Space,Str "times",Space,Str "look",Space,Str "like",Space,Str "this."]
-,Para [Str "You",Space,Str "go",Space,Str "to",Space,Str "an",Space,Str "outcrop,",Space,Str "do",Space,Str "actual",Space,Str "measurements",Space,Str "using",Space,Str "actual",Space,Str "physical",Space,Str "tools",Space,Str "and",Space,Str "write",Space,Str "down",Space,Str "your",Space,Str "findings",Space,Str "in",Space,Str "a",Space,Str "notebook"]
-,Para [Str "So",Space,Str "the",Space,Str "question",Space,Str "is",Space,Str "how",Space,Str "to",Space,Str "do",Space,Str "this",Space,Str "under",Space,Str "water?"]
-,Para [Str "And",Space,Str "the",Space,Str "answer",Space,Str "is",Space,Str "by",Space,Str "doing",Space,Str "virtual",Space,Str "fieldwork",Space,Str "in",Space,Str "an",Space,Str "immersive",Space,Str "environment"]
-,RawBlock (Format "html") "</aside>"
 ,HorizontalRule
 ,Header 1 ("georeferencing-data",[],[]) [Str "Georeferencing",Space,Str "Data"]
 ,Para [Str "Geospatial",Space,Str "data",Space,Str "from",Space,Str "the",Space,Str "real",Space,Str "world",Space,Str "needs",Space,Str "to",Space,Str "be",Space,Str "in",Space,Str "a",Space,Strong [Str "Coordinate",Space,Str "Reference",Space,Str "System"],Space,Str "to",Space,Str "express",Space,Str "the",Space,Str "location",Space,Str "and",Space,Str "be",Space,Str "able",Space,Str "to",Space,Str "make",Space,Str "queries",Space,Str "that",Space,Str "give",Space,Str "realistic",Space,Str "results",Space,Str "(e.g.\160real",Space,Str "distance",Space,Str "between",Space,Str "two",Space,Str "points",Space,Str "in",Space,Str "a",Space,Str "3D",Space,Str "model)"]
@@ -178,7 +173,7 @@
  [[Plain [Link ("",[],[]) [Str "https://cesium.com"] ("https://cesium.com","")]]
  ,[Plain [Str "Platform",Space,Str "for",Space,Str "creating",Space,Str "3D",Space,Str "geospatial",Space,Str "applications",Space,Str "and",Space,Str "processing",Space,Str "georeferenced",Space,Str "3D",Space,Str "data"]]]
 ,Div ("",["box","columns"],[("style","text-align:center")])
- [Header 2 ("section-16",[],[("style","text-align:center")]) []
+ [Header 2 ("section-15",[],[("style","text-align:center")]) []
  ,RawBlock (Format "html") "<img class=\"decker\" data-src=\"assets/img/cesium.png\" alt=\"cesium.png\" style=\"width:100%;\">"]
 ,RawBlock (Format "html") "<aside class=\"notes\">"
 ,Header 2 ("",[],[]) []
@@ -189,7 +184,7 @@
 ,Header 1 ("cesium-for-unreal",[],[]) [Str "Cesium",Space,Str "for",Space,Str "Unreal"]
 ,RawBlock (Format "html") "<!-- ## {style=\"display:ruby; justify-content:space-between\"} -->"
 ,Div ("",["box","columns"],[("style","text-align:center")])
- [Header 2 ("section-18",[],[("style","text-align:center")]) []
+ [Header 2 ("section-17",[],[("style","text-align:center")]) []
  ,Para [RawInline (Format "html") "<img class=\"decker\" data-src=\"assets/img/cesium-unreal.png\" alt=\"cesium-unreal.png\" style=\"width:75%;\">",SoftBreak,RawInline (Format "html") "<figure class=\"decker\" alt=\"HighresScreenshot00006.png\" style=\"width:75%;\"><img class=\"decker\" data-src=\"assets/img/HighresScreenshot00006.png\"><figcaption class=\"decker\">Black Smoker Photogrammetry Model in Unreal Engine</figcaption></figure>"]]
 ,RawBlock (Format "html") "<aside class=\"notes\">"
 ,Header 2 ("",[],[]) []
@@ -213,17 +208,17 @@
 ,Div ("",["multi-column-row","multi-column-row-3"],[])
  [Div ("",["grow-1","column","column-1"],[])
   [Div ("",["box","columns","left","fragment"],[])
-   [Header 2 ("section-20",["left"],[]) []
+   [Header 2 ("section-19",["left"],[]) []
    ,Para [RawInline (Format "html") "<br>",SoftBreak,RawInline (Format "html") "<br>"]
    ,RawBlock (Format "html") "<figure class=\"decker\" alt=\"Picture1.jpg\"><img class=\"decker\" data-src=\"assets/img/Picture1.jpg\"><figcaption class=\"decker\">Research question</figcaption></figure>"]]
  ,Div ("",["grow-1","column","column-2"],[])
   [Div ("",["box","columns","center","fragment"],[])
-   [Header 2 ("section-21",["center"],[]) []
+   [Header 2 ("section-20",["center"],[]) []
    ,Para [RawInline (Format "html") "<br>",SoftBreak,RawInline (Format "html") "<br>"]
    ,RawBlock (Format "html") "<figure class=\"decker\" alt=\"Picture2.jpg\"><img class=\"decker\" data-src=\"assets/img/Picture2.jpg\"><figcaption class=\"decker\">Sensemaking through immersive analytics</figcaption></figure>"]]
  ,Div ("",["grow-1","column","column-3"],[])
   [Div ("",["box","columns","right","fragment"],[])
-   [Header 2 ("section-22",["right"],[]) []
+   [Header 2 ("section-21",["right"],[]) []
    ,RawBlock (Format "html") "<figure class=\"decker\" alt=\"Picture3.jpg\"><img class=\"decker\" data-src=\"assets/img/Picture3.jpg\"><figcaption class=\"decker\">Publication of insights and visualization</figcaption></figure>"
    ,RawBlock (Format "html") "<!-- ## There is always space for more Visualization Provenance in visual analytics workflows! {.fragment .bottom style=\"font-size:large\"} -->"]]]
 ,Div ("",["single-column-row"],[])
@@ -232,13 +227,13 @@
 ,HorizontalRule
 ,Header 1 ("provenance",[],[]) [Str "Provenance"]
 ,Div ("",["box","columns","example","fragment"],[])
- [Header 2 ("section-23",["example"],[]) []
+ [Header 2 ("section-22",["example"],[]) []
  ,Para [Quoted DoubleQuote [Emph [Str "[\8230]",Space,Str "is",Space,Str "information",Space,Str "about",Space,Str "entities,",Space,Str "activities,",Space,Str "and",Space,Str "people",Space,Str "involved",Space,Str "in",Space,Str "producing",Space,Str "a",Space,Str "piece",Space,Str "of",Space,Str "data",Space,Str "or",Space,Str "thing,",Space,Str "which",Space,Str "can",Space,Str "be",Space,Str "used",Space,Str "to",Space,Str "form",Space,Strong [Str "assessments",Space,Str "about",Space,Str "its",Space,Str "quality,",Space,Str "reliability",Space,Str "or",Space,Str "trustworthiness"]]]]
  ,Para [Str "-",Space,Str "World",Space,Str "Wide",Space,Str "Web",Space,Str "Consortium",Space,Cite [Citation {citationId = "2013provoverview", citationPrefix = [], citationSuffix = [], citationMode = NormalCitation, citationNoteNum = 2, citationHash = 0}] [Str "(Groth",Space,Str "and",Space,Str "Moreau",Space,Str "2013)"]]]
 ,HorizontalRule
 ,Header 1 ("the-value-of-visualization",[],[]) [Str "The",Space,Str "Value",Space,Str "of",Space,Str "Visualization"]
 ,Div ("",["box","columns","fragment"],[])
- [Header 2 ("section-24",[],[]) []
+ [Header 2 ("section-23",[],[]) []
  ,RawBlock (Format "html") "<!-- The value is a trade-off between the costs (e.g. the effort to understand a visualization) and the gained knowledge. -->"
  ,Para [Emph [Quoted DoubleQuote [Str "Just",Space,Str "claiming",Space,Str "that",Space,Str "a",Space,Str "visualization",Space,Str "gives",Space,Str "insight",Space,Str "is",Space,Str "not",Space,Str "enough,",Space,Str "if",Space,Str "we",Space,Str "want",Space,Str "to",Space,Str "offer",Space,Str "additional",Space,Str "value."]],Space,Cite [Citation {citationId = "vanwijk2005value", citationPrefix = [], citationSuffix = [], citationMode = NormalCitation, citationNoteNum = 3, citationHash = 0}] [Str "(vanWijk",Space,Str "2005)"]]
  ,RawBlock (Format "html") "<!-- ## {.example .fragment} -->"]
@@ -249,15 +244,15 @@
 ,BlockQuote
  [BulletList
   [[Plain [Str "Capture",Space,Str "Users",Space,Str "reasoning",Space,Str "processes",Space,Str "by",Space,Str "capturing",Space,Str "internal",Space,Str "(i.e.\160in-app",Space,Str "interaction)",Space,Str "and",Space,Str "external",Space,Str "(e.g.\160think-aloud,",Space,Str "manual",Space,Str "notes)",Space,Str "information"]]
-  ,[Plain [Str "Capture",Space,Str "visualization",Space,Str "state",Space,Str "history",Space,Str "including",Space,Str "undo-redo",Space,Str "and",Space,Str "branching",Space,Str "actions"]]
+  ,[Plain [Str "Capture",Space,Str "visualization",Space,Str "state",Space,Str "history",Space,Str "and",Space,Str "enable",Space,Str "undo-redo",Space,Str "and",Space,Str "branching",Space,Str "actions"]]
   ,[Plain [Str "Organize",Space,Str "provenance",Space,Str "and",Space,Str "make",Space,Str "it",Space,Str "persistent",Space,Str "and",Space,Str "publishable",Space,Str "in",Space,Str "a",Space,Quoted DoubleQuote [Str "Digital",Space,Str "Lab",Space,Str "Book"],Space,Cite [Citation {citationId = "bernstetter2023practical", citationPrefix = [], citationSuffix = [], citationMode = NormalCitation, citationNoteNum = 4, citationHash = 0}] [Str "(Bernstetter,",Space,Str "Kwasnitschka,",Space,Str "and",Space,Str "Peters",Space,Str "2023)"]]]]]
 ,HorizontalRule
 ,Header 1 ("the-digital-lab-book",[],[]) [Str "The",Space,Str "Digital",Space,Str "Lab",Space,Str "Book"]
 ,RawBlock (Format "html") "<img class=\"decker\" data-src=\"assets/img/digital-lab-book_notext.png\" alt=\"digital-lab-book_notext.png\">"
 ,HorizontalRule
-,Header 1 ("section-25",[],[]) []
+,Header 1 ("section-24",[],[]) []
 ,Div ("",["box","columns"],[("style","text-align:center")])
- [Header 2 ("section-26",[],[("style","text-align:center")]) []
+ [Header 2 ("section-25",[],[("style","text-align:center")]) []
  ,RawBlock (Format "html") "<figure class=\"decker\" alt=\"ModifiedReproducibleJourney.jpg\" style=\"width:90%;\"><img class=\"decker\" data-src=\"assets/img/ModifiedReproducibleJourney.jpg\"><figcaption class=\"decker\">This modified illustration was originally created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. <a href=\"https://doi.org/10.5281/zenodo.3332807\">DOI: 10.5281/zenodo.3332807</a></figcaption></figure>"]
 ,HorizontalRule
 ,Header 1 ("references",["unnumbered"],[]) [Str "References"]
